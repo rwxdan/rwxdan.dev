@@ -59,10 +59,6 @@
   transform: scale(1.02);
 }
 
-.nav-links.resume:active {
-  transform: scale(0.98);
-}
-
 .nav-menu {
   display: none;
   height: 2rem;
