@@ -52,11 +52,11 @@
   color: var(--neutral-400);
   padding: 0.5em 2em;
   border-radius: 50em;
-  transition: transform 150ms linear;
+  transition: all 200ms ease-in-out;
 }
 
 .nav-links.resume:hover {
-  transform: scale(1.02);
+  opacity: 0.8;
 }
 
 .nav-menu {
