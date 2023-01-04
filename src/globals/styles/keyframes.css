@@ -1,0 +1,19 @@
+@keyframes menu {
+  from {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
