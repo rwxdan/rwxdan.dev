@@ -20,6 +20,6 @@ export const navLinks: {
   },
 ];
 
-export const Mail: string = 'rwxdan@gmail.com';
-export const Gh: string = 'https://github.com/rwxdan';
-export const In: string = 'https://www.linkedin.com/in/rwxdan/';
+export const Mail = 'rwxdan@gmail.com';
+export const Gh = 'https://github.com/rwxdan';
+export const In = 'https://www.linkedin.com/in/rwxdan/';
