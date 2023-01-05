@@ -25,6 +25,13 @@
   font-weight: 500;
   opacity: 0.7;
   margin-block-end: 0.5em;
+  max-width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--neutral-500);
+  width: 0;
+  animation: type 5.3s steps(67, end) forwards, blink 0.9s step-end 3 forwards;
+  animation-delay: 300ms, 3.3s;
 }
 
 .hero .title {
@@ -33,7 +40,23 @@
   letter-spacing: 0.2px;
   font-weight: 900;
   color: var(--neutral-800);
-  margin-block-end: 0.125em;
+  margin-block-end: 0.25em;
+}
+
+.hero .title .name {
+  position: relative;
+}
+
+.hero .title .name::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.125em;
+  background-color: var(--primary-600);
+  bottom: -4px;
+  left: 0;
+  animation: underline 150ms ease-in-out forwards;
+  animation-delay: 2.35s;
 }
 
 .hero .sub-title {
@@ -167,6 +190,17 @@
 
   .hero .text-box {
     text-align: center;
+  }
+
+  .hero .hello-world {
+    margin-inline: auto;
+    animation: none;
+    width: 100%;
+    border: none;
+  }
+
+  .hero .title .name::after {
+    animation-delay: 500ms;
   }
 
   .hero .intro {

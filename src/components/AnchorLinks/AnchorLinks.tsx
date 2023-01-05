@@ -1,8 +1,13 @@
+import { motion } from 'framer-motion';
 import { Gh, In } from '../../globals/constants';
 import './anchor_links.css';
 const AnchorLinks = () => {
   return (
-    <aside className="anchor-links">
+    <motion.aside
+      initial={{ y: 100 }}
+      animate={{ y: 0 }}
+      className="anchor-links"
+    >
       <div className="links-box">
         <a href={Gh} target="_blank" className="link">
           <i className="devicon-github-original"></i>
@@ -12,7 +17,7 @@ const AnchorLinks = () => {
         </a>
       </div>
       <div className="decoration"></div>
-    </aside>
+    </motion.aside>
   );
 };
 

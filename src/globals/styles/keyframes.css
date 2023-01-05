@@ -17,3 +17,22 @@
     width: 100%;
   }
 }
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--neutral-500);
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import './nav.css';
 import logo from '/src/assets/logo.svg';
 import menu from '/src/assets/icons/menu.svg';
@@ -20,22 +21,24 @@ const Nav = () => {
           className="nav-menu"
           onClick={() => setOpen((prev) => !prev)}
         />
-        <ul className={`nav-links-box ${Open ? 'expanded' : ''}`}>
-          {navLinks.map((item, index) => (
-            <li key={item.id}>
-              <a
-                href={`#${item.id}`}
-                className={` ${
-                  index === navLinks.length - 1
-                    ? 'nav-links resume'
-                    : 'nav-links'
-                }  `}
-              >
-                {item.title}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <motion.div initial={{ x: 100 }} animate={{ x: 0 }}>
+          <ul className={`nav-links-box ${Open ? 'expanded' : ''}`}>
+            {navLinks.map((item, index) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className={` ${
+                    index === navLinks.length - 1
+                      ? 'nav-links resume'
+                      : 'nav-links'
+                  }  `}
+                >
+                  {item.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
       </div>
     </nav>
   );

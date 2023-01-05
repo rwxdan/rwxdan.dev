@@ -1,13 +1,18 @@
+import { motion } from 'framer-motion';
 import { Mail } from '../../globals/constants';
 import './anchor_mail.css';
 const AnchorMail = () => {
   return (
-    <aside className="anchor-mail">
+    <motion.aside
+      initial={{ y: 100 }}
+      animate={{ y: 0 }}
+      className="anchor-mail"
+    >
       <a href={`mailto:${Mail}`} className="mail">
         {Mail}
       </a>
       <div className="decoration"></div>
-    </aside>
+    </motion.aside>
   );
 };
 
