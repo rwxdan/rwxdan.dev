@@ -33,3 +33,10 @@ body {
 main {
   position: relative;
 }
+
+@media (max-width: 50em) {
+  :root {
+    --fs-4xl: 1.75rem;
+    --fs-6xl: 2.25rem;
+  }
+}
