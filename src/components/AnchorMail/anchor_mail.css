@@ -1,14 +1,15 @@
 .anchor-mail {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4.75em;
   position: fixed;
-  right: -6.5em;
+  right: -2.5em;
   bottom: 0;
 }
 
 .anchor-mail .mail {
-  transform: rotate(90deg) translateY(4.25rem);
+  transform: rotate(90deg);
   text-decoration: none;
   color: var(--primary-600);
   font-family: var(--ff-mono);
