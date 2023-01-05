@@ -7,7 +7,7 @@
   bottom: 0;
 }
 
-.mail {
+.anchor-mail .mail {
   transform: rotate(90deg) translateY(4.25rem);
   text-decoration: none;
   color: var(--primary-600);
@@ -18,11 +18,11 @@
   transition: opacity 200ms ease-in-out;
 }
 
-.mail:is(:hover, :focus-visible) {
+.anchor-mail .mail:is(:hover, :focus-visible) {
   opacity: 1;
 }
 
-.decoration {
+.anchor-mail .decoration {
   width: 1px;
   height: 4rem;
   background-color: var(--primary-500);

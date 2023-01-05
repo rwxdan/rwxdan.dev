@@ -8,13 +8,13 @@
   left: 1.5em;
 }
 
-.links-box {
+.anchor-links .links-box {
   display: flex;
   flex-direction: column;
   gap: 0.75em;
 }
 
-.link {
+.anchor-links .links-box .link {
   font-size: 1.75rem;
   text-decoration: none;
   color: var(--primary-600);
@@ -22,13 +22,13 @@
   transition: all 200ms ease-in-out;
 }
 
-.decoration {
+.anchor-links .decoration {
   width: 1px;
   height: 4rem;
   background-color: var(--primary-500);
 }
 
-.link:is(:hover, :focus-visible) {
+.anchor-links .links-box .link:is(:hover, :focus-visible) {
   opacity: 1;
   transform: translateY(-0.125em);
 }
