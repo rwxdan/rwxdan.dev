@@ -3,7 +3,9 @@
 ::after {
   border-width: 0;
   border-style: solid;
-  border-color: theme('borderColor.DEFAULT', currentColor);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 blockquote,
