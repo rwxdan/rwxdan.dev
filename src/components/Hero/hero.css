@@ -200,6 +200,10 @@
     border: none;
   }
 
+  .hero .title {
+    margin-block-end: 1rem;
+  }
+
   .hero .title .name::after {
     animation-delay: 500ms;
   }
