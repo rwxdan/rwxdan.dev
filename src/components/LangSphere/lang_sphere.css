@@ -1,0 +1,38 @@
+.lang-sphere {
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sphere {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  font-family: var(--ff-mono);
+  font-weight: 500;
+  letter-spacing: 0.0625em;
+  font-size: var(--fs-lg);
+}
+
+.sphere--item {
+  color: var(--neutral-500);
+  transition: all var(--ease-out-sine) var(--ms200);
+}
+
+.sphere--item:hover {
+  color: var(--primary-600);
+  cursor: pointer;
+  text-shadow: var(--primary-500) 0 0 4px;
+}
+
+@media only screen and (max-width: 50em) {
+  .sphere {
+    font-size: var(--fs-sm);
+  }
+  .lang-sphere-box {
+    grid-row: 1;
+  }
+}

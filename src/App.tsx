@@ -1,4 +1,4 @@
-import { Nav, AnchorLinks, AnchorMail, Hero } from './components';
+import { Nav, AnchorLinks, AnchorMail, Hero, WhoAmI } from './components';
 const App = () => {
   return (
     <main>
@@ -6,6 +6,7 @@ const App = () => {
       <AnchorLinks />
       <AnchorMail />
       <Hero />
+      <WhoAmI />
     </main>
   );
 };
