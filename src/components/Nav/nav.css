@@ -39,7 +39,7 @@
   bottom: -0.125rem;
   transform: scale(0);
   transform-origin: center;
-  transition: all 200ms linear;
+  transition: all var(--ease-out-quad) var(--ms200);
 }
 
 .nav-links:not(.resume):hover {
@@ -55,7 +55,7 @@
   color: var(--neutral-400);
   padding: 0.5em 2em;
   border-radius: 50em;
-  transition: all 200ms ease-in-out;
+  transition: all var(--ease-out-sine) var(--ms200);
 }
 
 .nav-links.resume:hover {
@@ -94,8 +94,8 @@
     background-color: var(--primary-500);
     padding-block: 2em;
     border-radius: 0.5em;
-    box-shadow: 0 0.75em 3em var(--neutral-500);
-    animation: menu 200ms ease-in-out;
+    box-shadow: 0 0.5em 0.75em var(--neutral-750);
+    animation: menu var(--ease-out-quad) var(--ms200);
     z-index: 100;
   }
 }
