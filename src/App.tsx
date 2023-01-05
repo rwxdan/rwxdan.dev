@@ -1,10 +1,11 @@
-import { Nav, AnchorLinks, AnchorMail } from './components';
+import { Nav, AnchorLinks, AnchorMail, Hero } from './components';
 const App = () => {
   return (
     <main>
       <Nav />
       <AnchorLinks />
       <AnchorMail />
+      <Hero />
     </main>
   );
 };
