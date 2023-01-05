@@ -3,6 +3,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1em 1.5em;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .nav-logo {
