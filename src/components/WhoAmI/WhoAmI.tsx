@@ -44,7 +44,7 @@ const WhoAmI = () => {
             <span className="bold">System Administration</span> and{' '}
             <span className="bold">Networking</span>. I might not be an expert
             on any of those, but I'm proud to say that I've had the privilege of
-            collaborating with engineers at{' '}
+            collaborating with engineers from{' '}
             <a href="https://www.cisco.com/" className="external-link">
               Cisco
             </a>
