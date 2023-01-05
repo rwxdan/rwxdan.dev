@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import TagCloud from 'TagCloud';
 import { motion } from 'framer-motion';
-import './lang_sphere.css';
+import './knowledge.css';
 const LangSphere = () => {
   const isMobile = window.innerWidth < 800;
   useEffect(() => {
@@ -25,6 +25,9 @@ const LangSphere = () => {
         'Docker',
         'Ansible',
         'AWS',
+        'HTTP',
+        'DNS',
+        'API',
       ];
 
       const options: object = {
@@ -47,7 +50,7 @@ const LangSphere = () => {
       transition={{ delay: 0.1, type: 'tween' }}
       className="lang-sphere-box"
     >
-      <div className="lang-sphere">
+      <div className="knowledge-sphere">
         <span className="tagcloud"></span>
       </div>
     </motion.div>
