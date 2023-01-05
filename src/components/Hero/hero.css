@@ -30,8 +30,9 @@
   white-space: nowrap;
   border-right: 3px solid var(--neutral-500);
   width: 0;
-  animation: type 5.3s steps(67, end) forwards, blink 0.9s step-end 3 forwards;
-  animation-delay: 300ms, 3.3s;
+  animation: type calc(var(--s5) + var(--ms300)) steps(66, end) forwards,
+    blink var(--ms900) step-end 3 forwards;
+  animation-delay: var(--ms300), calc(var(--s3) + var(--ms300));
 }
 
 .hero .title {
@@ -55,8 +56,8 @@
   background-color: var(--primary-600);
   bottom: -4px;
   left: 0;
-  animation: underline 150ms ease-in-out forwards;
-  animation-delay: 2.35s;
+  animation: underline var(--ms150) var(--ease-in-out-cubic) both;
+  animation-delay: calc(var(--s2) + var(--ms350));
 }
 
 .hero .sub-title {
@@ -102,7 +103,7 @@
   border-radius: 0 0 50em 50em;
   overflow: hidden;
   position: relative;
-  transition: transform 100ms ease-in-out;
+  transition: transform var(--ease-out-quad) var(--ms150);
 }
 
 .hero .image-wrapper .background {
@@ -116,11 +117,11 @@
   position: absolute;
   z-index: 10;
   top: -0.5rem;
-  transition: transform 300ms ease-in-out;
+  transition: transform var(--ease-in-out-cubic) var(--ms300);
 }
 
 .hero .image-wrapper:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .hero .image-wrapper:hover .profile {
@@ -141,7 +142,7 @@
   border-radius: 0.25em;
   z-index: 20;
   opacity: 0;
-  transition: all 300ms ease-in-out;
+  transition: all var(--ease-in-out-cubic) var(--ms300);
 }
 
 .hero .wrapper .tag {
