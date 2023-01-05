@@ -96,5 +96,6 @@
     border-radius: 0.5em;
     box-shadow: 0 0.75em 3em var(--neutral-500);
     animation: menu 200ms ease-in-out;
+    z-index: 100;
   }
 }
