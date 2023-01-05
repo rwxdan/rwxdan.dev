@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import './hero.css';
-import Me from '../../assets/images/me.png';
+import { Me } from '../../assets/images';
 const Hero = () => {
   const isMobile = window.innerWidth < 800;
   let variants;
