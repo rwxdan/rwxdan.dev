@@ -23,6 +23,36 @@
   --fs-4xl: 2.5rem;
   --fs-5xl: 3rem;
   --fs-6xl: 3.5rem;
+
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  --ms50: 50ms;
+  --ms100: 100ms;
+  --ms150: 150ms;
+  --ms200: 200ms;
+  --ms250: 250ms;
+  --ms300: 300ms;
+  --ms350: 350ms;
+  --ms400: 400ms;
+  --ms450: 450ms;
+  --ms500: 500ms;
+  --ms550: 550ms;
+  --ms600: 600ms;
+  --ms650: 650ms;
+  --ms700: 700ms;
+  --ms750: 750ms;
+  --ms800: 800ms;
+  --ms850: 850ms;
+  --ms900: 900ms;
+  --ms950: 950ms;
+  --s1: 1000ms;
+  --s2: 2000ms;
+  --s3: 3000ms;
+  --s4: 4000ms;
+  --s5: 5000ms;
 }
 
 body {
