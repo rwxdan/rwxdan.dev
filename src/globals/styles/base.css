@@ -4,6 +4,7 @@
   --neutral-400: hsl(50, 21%, 95%);
   --neutral-500: hsl(38, 8%, 72%);
   --neutral-700: hsl(236, 20%, 32%);
+  --neutral-750: hsl(233, 23%, 21%, 0.5);
   --neutral-800: hsl(233, 23%, 21%);
 
   --ff-sans-title: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -26,8 +27,12 @@
 
   --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-out-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  --ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
   --ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+  --ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
   --ms50: 50ms;
   --ms100: 100ms;
