@@ -4,6 +4,7 @@ import {
   Protonmail,
   Linkedin,
   GitHub,
+  Gmail,
   FrontendMentor,
 } from '../../assets/icons';
 
@@ -38,6 +39,11 @@ export const ContactLinks: {
   link: string;
   icon: string;
 }[] = [
+  {
+    id: 'gmail',
+    link: 'mailto:rwxdan@gmail.com',
+    icon: Gmail,
+  },
   {
     id: 'protonmail',
     link: 'mailto:rwxdan@proton.me',
