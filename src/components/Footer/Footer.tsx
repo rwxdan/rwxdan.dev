@@ -4,7 +4,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="text-box">
         <p className="text">
-          &copy; Daniel Castro 2023 —{' '}
+          Daniel Castro 2023 —{' '}
           <a
             target="_blank"
             href="https://github.com/rwxdan/portfolio"
