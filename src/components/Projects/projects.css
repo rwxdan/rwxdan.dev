@@ -182,5 +182,10 @@
 
   .sample-box .image-box .sample {
     max-width: 100%;
+    filter: none;
+    opacity: 1;
+  }
+  .sample-box .image-box .sample:hover {
+    transform: none;
   }
 }
