@@ -5,6 +5,7 @@ import './knowledge.css';
 const Knowledge = () => {
   const scrollRef = useRef(null);
   interface TagCloudOptions {}
+  const isMobile = window.innerWidth < 470;
   return (
     <motion.div
       initial={{ scale: 0 }}
@@ -16,7 +17,8 @@ const Knowledge = () => {
       <TagCloud
         className="knowledge-sphere"
         options={(w: Window & typeof globalThis): TagCloudOptions => ({
-          radius: Math.min(600, w.innerWidth, w.innerHeight) / 2,
+          radius:
+            Math.min(!isMobile ? 600 : 300, w.innerWidth, w.innerHeight) / 2,
           maxSpeed: 'fast',
           containerClass: 'sphere',
           itemClass: 'sphere--item',
