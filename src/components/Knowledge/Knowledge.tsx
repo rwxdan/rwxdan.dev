@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import TagCloud from 'TagCloud';
 import { motion } from 'framer-motion';
 import './knowledge.css';
 const LangSphere = () => {
+  const scrollRef = useRef(null);
   const isMobile = window.innerWidth < 800;
   useEffect(() => {
     return () => {
@@ -48,6 +49,7 @@ const LangSphere = () => {
       initial={{ scale: 0 }}
       whileInView={{ scale: 1 }}
       transition={{ delay: 0.1, type: 'tween' }}
+      viewport={{ root: scrollRef, once: true }}
       className="lang-sphere-box"
     >
       <div className="knowledge-sphere">
