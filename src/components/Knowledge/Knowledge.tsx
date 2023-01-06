@@ -12,10 +12,11 @@ const LangSphere = () => {
         'HTML',
         'CSS',
         'SASS',
+        'BEM',
         'TailwindCSS',
         'JavaScript',
         'TypeScript',
-        'React',
+        'ReactJS',
         'NodeJS',
         'ES6',
         'Python',
@@ -29,6 +30,7 @@ const LangSphere = () => {
         'HTTP',
         'DNS',
         'API',
+        'JSON',
       ];
 
       const options: object = {
