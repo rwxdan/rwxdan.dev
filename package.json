@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "TagCloud": "^2.3.2",
+    "@frank-mayer/react-tag-cloud": "^1.1.1",
     "autoprefixer": "^10.4.13",
     "framer-motion": "^8.1.5",
     "postcss": "^8.4.20",
