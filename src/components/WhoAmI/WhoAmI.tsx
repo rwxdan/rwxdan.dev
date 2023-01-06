@@ -15,7 +15,7 @@ const WhoAmI = () => {
             Hi there! My name is Daniel. I'm a self-taught Web developer from
             Venezuela. As far back as I can remember, I've always been curious
             about how
-            <span className="italic"> things</span> work. Many times I found
+            <span className="italic"> things</span> work. Oftentimes I found
             myself <span className="bold">solving</span> little puzzles for fun,{' '}
             <span className="bold">building</span> something new, and then{' '}
             <span className="bold">transforming </span>it. Truth to be told, I
