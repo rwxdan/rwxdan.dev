@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@frank-mayer/react-tag-cloud": "^1.1.1",
+    "@vercel/analytics": "^0.1.6",
     "autoprefixer": "^10.4.13",
     "framer-motion": "^8.1.5",
     "postcss": "^8.4.20",
