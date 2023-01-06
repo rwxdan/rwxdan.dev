@@ -44,7 +44,8 @@ const Hero = () => {
             animate="visible"
             className="title"
           >
-            I'm <span className="name">Daniel Castro</span>
+            I'm <br className="break" />{' '}
+            <span className="name">Daniel Castro</span>
           </motion.h1>
           <motion.div
             variants={childVariants}
