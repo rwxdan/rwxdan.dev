@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Gh, In } from '../../globals/constants';
+import { GitHub, Linkedin } from '../../assets/icons';
 import './anchor_links.css';
 const AnchorLinks = () => {
   return (
@@ -10,10 +11,10 @@ const AnchorLinks = () => {
     >
       <div className="links-box">
         <a href={Gh} target="_blank" className="link">
-          <i className="devicon-github-original"></i>
+          <img src={GitHub} alt="GitHub" />
         </a>
         <a href={In} target="_blank" className="link">
-          <i className="devicon-linkedin-plain"></i>
+          <img src={Linkedin} alt="LinkedIn" />
         </a>
       </div>
       <div className="decoration"></div>
