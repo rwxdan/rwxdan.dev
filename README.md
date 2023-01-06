@@ -21,6 +21,7 @@
 - [React](https://reactjs.org/)
 - [TypeScript](https://typescriptlang.org/)
 - [Framer Motion](https://www.framer.com/motion/)
+- [@frank-mayer/react-tag-cloud](https://github.com/Frank-Mayer/react-tag-cloud)
 - [PostCSS](https://postcss.org/)
 - [Autoprefixer](https://autoprefixer.github.io/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/)
