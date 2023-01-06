@@ -1,7 +1,7 @@
 .whoami {
-  min-height: 100vh;
   max-width: 1356px;
-  padding: 15rem 4rem;
+  margin-block: 3.25rem 10rem;
+  padding-inline: 4rem;
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -107,8 +107,8 @@
 
 @media only screen and (max-width: 50em) {
   .whoami {
-    margin-top: 3rem;
-    padding: 0 1.5rem;
+    margin-block: 3.25rem;
+    padding-inline: 1.5rem;
   }
 
   .whoami .title {
