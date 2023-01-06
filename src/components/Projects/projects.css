@@ -13,6 +13,7 @@
   max-width: fit-content;
   position: relative;
   margin-block-end: 0.5em;
+  letter-spacing: -0.3px;
 }
 
 .projects .title::after {
@@ -32,6 +33,7 @@
   text-align: center;
   color: var(--neutral-800);
   opacity: 0.6;
+  letter-spacing: -0.3px;
 }
 
 .projects-box {
