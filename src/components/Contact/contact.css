@@ -83,6 +83,7 @@
 
 .contact-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.375rem;
   justify-content: center;
 }
