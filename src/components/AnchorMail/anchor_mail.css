@@ -6,6 +6,7 @@
   position: fixed;
   right: -2.5em;
   bottom: 0;
+  z-index: 30;
 }
 
 .anchor-mail .mail {

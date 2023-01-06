@@ -6,6 +6,7 @@
   position: fixed;
   bottom: 0;
   left: 1.5em;
+  z-index: 30;
 }
 
 .anchor-links .links-box {
@@ -15,11 +16,12 @@
 }
 
 .anchor-links .links-box .link {
-  font-size: 1.75rem;
+  display: block;
   text-decoration: none;
   color: var(--primary-600);
   opacity: 0.7;
   transition: all var(--ease-out-sine) var(--ms200);
+  width: 1.75rem;
 }
 
 .anchor-links .decoration {
