@@ -35,7 +35,7 @@ const LangSphere = () => {
 
       const options: object = {
         radius: !isMobile ? 300 : 150,
-        maxSpeed: 'normal',
+        maxSpeed: 'fast',
         initSpeed: 'normal',
         keep: true,
         containerClass: 'sphere',
