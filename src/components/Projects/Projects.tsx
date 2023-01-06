@@ -130,7 +130,8 @@ const Projects = () => {
               >
                 Figma
               </a>
-              .
+              . This build gave me a much-needed understanding of gradients and
+              blur, and it's also one of my first projects using TailwindCSS.
             </p>
             <ul className="stack">
               <li className="item">PostCSS</li>
@@ -148,7 +149,7 @@ const Projects = () => {
               </a>
               <a
                 target="_blank"
-                href="https://hoobank.proj.rwxdan.dev/"
+                href="https://hoobank-rwxdan.vercel.app/"
                 className="link"
               >
                 <img src={share} alt="Live preview" className="icon" />
