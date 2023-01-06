@@ -20,7 +20,7 @@
   content: '';
   position: absolute;
   width: 100%;
-  height: 0.075em;
+  height: 0.125em;
   background-color: var(--primary-600);
   bottom: -2px;
   left: 0;
@@ -171,7 +171,7 @@
     flex-direction: column-reverse;
   }
   .projects-box .sample-box {
-    border-bottom: 1px solid var(--neutral-450);
+    border-bottom: 1px solid var(--primary-450);
   }
   .text-box .external-links {
     margin-inline: auto;
