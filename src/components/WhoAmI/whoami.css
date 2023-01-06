@@ -36,7 +36,7 @@
   content: '';
   position: absolute;
   width: 100%;
-  height: 0.075em;
+  height: 0.125em;
   background-color: var(--primary-600);
 }
 
