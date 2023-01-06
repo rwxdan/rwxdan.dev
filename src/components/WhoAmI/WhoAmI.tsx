@@ -1,12 +1,15 @@
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import LangSphere from '../Knowledge/Knowledge';
 import './whoami.css';
 const WhoAmI = () => {
+  const scrollRef = useRef(null);
   return (
     <section id="whoami" className="whoami">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ root: scrollRef, once: true }}
         className="whoami-box"
       >
         <div className="text-box">

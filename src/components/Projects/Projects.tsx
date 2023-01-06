@@ -45,6 +45,7 @@ const Projects = () => {
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
+      viewport={{ root: scrollRef, once: true }}
       id="projects"
       className="projects"
     >
