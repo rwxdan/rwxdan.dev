@@ -1,4 +1,11 @@
-import { Nav, AnchorLinks, AnchorMail, Hero, WhoAmI } from './components';
+import {
+  Nav,
+  AnchorLinks,
+  AnchorMail,
+  Hero,
+  WhoAmI,
+  Projects,
+} from './components';
 const App = () => {
   return (
     <main>
@@ -7,6 +14,7 @@ const App = () => {
       <AnchorMail />
       <Hero />
       <WhoAmI />
+      <Projects />
     </main>
   );
 };
