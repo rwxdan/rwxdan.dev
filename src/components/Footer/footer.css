@@ -1,0 +1,42 @@
+.footer {
+  border: 0;
+  padding-block: 2.5em;
+}
+
+.footer .text-box {
+  margin-inline: auto;
+}
+
+.footer .text-box .text {
+  font-family: var(--ff-sans-body);
+  font-size: var(--fs-xs);
+  font-weight: 400;
+  color: var(--neutral-800);
+  text-align: center;
+}
+
+.text-box .text .external-link {
+  color: var(--primary-600);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all var(--ease-out-sine) var(--ms200);
+  position: relative;
+}
+
+.text-box .text .external-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.075em;
+  background-color: var(--primary-600);
+  bottom: 0;
+  left: 0;
+}
+
+.text-box .text .external-link:hover {
+  opacity: 0.7;
+}
+
+.text-box .text .external-link:hover::after {
+  animation: underline var(--ease-out-sine) var(--ms200) forwards;
+}

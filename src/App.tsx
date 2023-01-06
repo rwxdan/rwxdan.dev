@@ -6,6 +6,7 @@ import {
   WhoAmI,
   Projects,
   Contact,
+  Footer,
 } from './components';
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <WhoAmI />
       <Projects />
       <Contact />
+      <Footer />
     </main>
   );
 };
