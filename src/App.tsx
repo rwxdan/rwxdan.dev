@@ -7,6 +7,7 @@ import {
   Projects,
   Contact,
   Footer,
+  AnalyticsComponent,
 } from './components';
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Projects />
       <Contact />
       <Footer />
+      <AnalyticsComponent />
     </main>
   );
 };
