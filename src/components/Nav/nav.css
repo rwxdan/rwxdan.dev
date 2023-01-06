@@ -59,7 +59,8 @@
 }
 
 .nav-links.resume:hover {
-  opacity: 0.8;
+  opacity: 0.7;
+  box-shadow: 0 0 0.5em var(--neutral-500);
 }
 
 .nav-menu {
