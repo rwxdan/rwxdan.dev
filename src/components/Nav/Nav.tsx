@@ -2,8 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import './nav.css';
 import logo from '/src/assets/logo.svg';
-import menu from '/src/assets/icons/menu.svg';
-import close from '/src/assets/icons/close.svg';
+import { Menu, Close } from '../../assets/icons';
 import { navLinks } from '../../globals/constants';
 const Nav = () => {
   const [Open, setOpen] = useState(false);
@@ -16,7 +15,7 @@ const Nav = () => {
       </div>
       <div>
         <img
-          src={Open ? close : menu}
+          src={Open ? Close : Menu}
           alt="Menu"
           className="nav-menu"
           onClick={() => setOpen((prev) => !prev)}
