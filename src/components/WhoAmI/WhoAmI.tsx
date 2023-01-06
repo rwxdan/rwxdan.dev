@@ -1,14 +1,13 @@
-import './whoami.css';
 import { motion } from 'framer-motion';
 import LangSphere from '../Knowledge/Knowledge';
+import './whoami.css';
 const WhoAmI = () => {
   return (
-    <section className="whoami">
+    <section id="whoami" className="whoami">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         className="whoami-box"
-        id="whoami"
       >
         <div className="text-box">
           <h3 className="title">WhoAmI</h3>
