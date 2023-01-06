@@ -7,7 +7,7 @@ const Footer = () => {
           Daniel Castro 2023 —{' '}
           <a
             target="_blank"
-            href="https://github.com/rwxdan/portfolio"
+            href="https://github.com/rwxdan/rwxdan.dev"
             className="external-link"
           >
             Designed & Coded by rwxdan
