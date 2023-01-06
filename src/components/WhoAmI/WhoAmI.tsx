@@ -38,8 +38,8 @@ const WhoAmI = () => {
             . However, at the start of <span className="mono">2020</span> I had
             some free time in my hands, I wanted to{' '}
             <span className="bold">explore</span> something else than
-            spreadsheets and such. I had <span className="mono">Python</span>{' '}
-            and <span className="mono">Linux</span> in mind, so why not?
+            spreadsheets and such. <span className="mono">Python</span> and{' '}
+            <span className="mono">Linux</span> crossed my mind, so why not?
           </p>
           <p className="text">
             Fast-forward to today, I've had the joy of gathering knowledge and
