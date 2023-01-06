@@ -1,0 +1,116 @@
+.contact {
+  max-width: 1356px;
+  margin-block: 10rem 3.5rem;
+  margin-inline: auto;
+  padding-inline: 4rem;
+}
+
+.cta-box {
+  margin-block: 2.5rem;
+  margin-inline: auto;
+  text-align: center;
+  max-width: fit-content;
+  border-bottom: 1px solid var(--primary-450);
+}
+
+.cta-box .title {
+  font-family: var(--ff-mono);
+  font-size: var(--fs-xxl);
+  font-weight: 700;
+  color: var(--neutral-800);
+  margin-block-end: 0.5em;
+  letter-spacing: -0.3px;
+  position: relative;
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+.cta-box .title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125em;
+  background-color: var(--primary-600);
+}
+
+.cta-box .sub-title {
+  font-family: var(--ff-mono);
+  font-size: var(--fs-xl);
+  font-weight: 500;
+  color: var(--neutral-800);
+  opacity: 0.6;
+  letter-spacing: -0.3px;
+}
+
+.cta-box .text {
+  font-family: var(--ff-sans-body);
+  font-size: var(--fs-base);
+  font-weight: 400;
+  color: var(--neutral-800);
+  max-width: 55ch;
+  line-height: 1.75rem;
+  margin-inline: auto;
+  margin-block: 1.125em;
+}
+
+.cta-box .text .bold {
+  font-weight: 700;
+}
+
+.cta-box .cta {
+  display: block;
+  max-width: fit-content;
+  margin-inline: auto;
+  margin-block: 1.5rem;
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  font-family: var(--ff-mono);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  color: var(--neutral-400);
+  letter-spacing: -0.3px;
+  background-color: var(--primary-600);
+  border-radius: 50em;
+  transition: all var(--ease-out-sine) var(--ms200);
+}
+
+.cta-box .cta:hover {
+  opacity: 0.7;
+  box-shadow: 0 0 0.5em var(--neutral-500);
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.375rem;
+  justify-content: center;
+}
+
+.contact-links .link {
+  opacity: 0.7;
+  display: block;
+  width: 2rem;
+  transition: all var(--ease-out-sine) var(--ms200);
+}
+
+.contact-links .link:hover {
+  opacity: 1;
+  transform: translateY(-0.125em);
+}
+
+@media only screen and (max-width: 50em) {
+  .contact {
+    margin-block: 3.5rem;
+    padding-inline: 1.5rem;
+  }
+  .cta-box .title {
+    font-size: var(--fs-xl);
+  }
+  .cta-box .sub-title {
+    font-size: var(--fs-lg);
+  }
+  .cta-box .cta {
+    font-size: var(--fs-base);
+  }
+}

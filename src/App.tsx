@@ -5,6 +5,7 @@ import {
   Hero,
   WhoAmI,
   Projects,
+  Contact,
 } from './components';
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Hero />
       <WhoAmI />
       <Projects />
+      <Contact />
     </main>
   );
 };
