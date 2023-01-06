@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
-import LangSphere from '../Knowledge/Knowledge';
+import Knowledge from '../Knowledge/Knowledge';
 import './whoami.css';
 const WhoAmI = () => {
   const scrollRef = useRef(null);
@@ -75,7 +75,7 @@ const WhoAmI = () => {
             about is <span className="bold">Web Development!</span>
           </p>
         </div>
-        <LangSphere />
+        <Knowledge />
       </motion.div>
     </section>
   );
