@@ -52,7 +52,7 @@ const LangSphere = () => {
       whileInView={{ scale: 1 }}
       transition={{ delay: 0.1, type: 'tween' }}
       viewport={{ root: scrollRef, once: true }}
-      className="lang-sphere-box"
+      className="knowledge-sphere-box"
     >
       <div className="knowledge-sphere">
         <span className="tagcloud"></span>

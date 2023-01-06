@@ -32,7 +32,7 @@
   .sphere {
     font-size: var(--fs-sm);
   }
-  .lang-sphere-box {
+  .knowledge-sphere-box {
     grid-row: 1;
   }
 }
