@@ -26,4 +26,8 @@
 - [Firefox](https://www.mozilla.org/en-US/firefox/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
-#### Credits to [Brittany Chiang](https://github.com/bchiang7), for some elements I took inspiration from [their website](https://brittanychiang.com/).
+<div align="center">
+ <h4>
+  Credits to <a href="https://github.com/bchiang7">Brittany Chiang</a>, for some elements I took inspiration from <a href="https://brittanychiang.com/">their website</a>.
+ </h4>
+</div>
