@@ -10,3 +10,20 @@
 <div align="center">
     <img src="https://skillicons.dev/icons?i=vite,nodejs,react,typescript,css,vscode" />
 </div>
+
+| ![](./public/screenshots/phone_view.png) | ![](./public/screenshots/tablet_view.png) | ![](./public/screenshots/desktop_view.png) |
+| ---------------------------------------- | ----------------------------------------- | ------------------------------------------ |
+
+### Tools used 🧰
+
+- [NodeJS](https://nodejs.org/)
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [PostCSS](https://postcss.org/)
+- [Autoprefixer](https://autoprefixer.github.io/)
+- [Firefox](https://www.mozilla.org/en-US/firefox/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+
+#### Credits to [Brittany Chiang](https://github.com/bchiang7), for some elements I took inspiration from [their website](https://brittanychiang.com/).
