@@ -37,7 +37,7 @@ const Contact = () => {
         >
           {ContactLinks.map((item) => (
             <li key={item.id}>
-              <a href={item.link} className="link">
+              <a target="_blank" href={item.link} className="link">
                 <img src={item.icon} alt={item.id} />
               </a>
             </li>
