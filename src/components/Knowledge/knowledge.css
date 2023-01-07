@@ -26,11 +26,8 @@
   text-shadow: var(--primary-500) 0 0 4px;
 }
 
-@media only screen and (max-width: 50em) {
-  .sphere {
-    font-size: var(--fs-sm);
-  }
+@media only screen and (max-width: 490px) {
   .knowledge-sphere-box {
-    grid-row: 1;
+    display: none;
   }
 }
