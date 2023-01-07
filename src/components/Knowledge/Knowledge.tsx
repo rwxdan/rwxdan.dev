@@ -1,19 +1,10 @@
-import { useRef } from 'react';
 import { TagCloud } from '@frank-mayer/react-tag-cloud';
-import { motion } from 'framer-motion';
 import './knowledge.css';
 const Knowledge = () => {
-  const scrollRef = useRef(null);
   interface TagCloudOptions {}
   const isMobile = window.innerWidth < 470;
   return (
-    <motion.div
-      initial={{ scale: 0 }}
-      whileInView={{ scale: 1 }}
-      transition={{ delay: 0.1, type: 'tween' }}
-      viewport={{ root: scrollRef, once: true }}
-      className="knowledge-sphere-box"
-    >
+    <div className="knowledge-sphere-box">
       <TagCloud
         className="knowledge-sphere"
         options={(w: Window & typeof globalThis): TagCloudOptions => ({
@@ -49,7 +40,7 @@ const Knowledge = () => {
           'JSON',
         ]}
       </TagCloud>
-    </motion.div>
+    </div>
   );
 };
 
