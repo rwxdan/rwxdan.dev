@@ -7,39 +7,12 @@ import share from '../../assets/icons/share.svg';
 import './projects.css';
 
 const Projects = () => {
-  const isMobile = window.innerWidth < 800;
   let variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
     },
   };
-  let row;
-  let rowReverse;
-  !isMobile
-    ? ((row = {
-        left: {
-          x: -100,
-        },
-        right: {
-          x: 0,
-          transition: {
-            delay: 0.05,
-          },
-        },
-      }),
-      (rowReverse = {
-        right: {
-          x: 100,
-        },
-        left: {
-          x: 0,
-          transition: {
-            delay: 0.05,
-          },
-        },
-      }))
-    : '';
   const scrollRef = useRef(null);
   return (
     <motion.section
@@ -96,15 +69,9 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <motion.div
-            variants={row}
-            initial="left"
-            whileInView="right"
-            viewport={{ root: scrollRef, once: true }}
-            className="image-box"
-          >
+          <div className="image-box">
             <img src={Blogr} alt="Blogr screenshots" className="sample" />
-          </motion.div>
+          </div>
         </motion.div>
         <motion.div
           variants={variants}
@@ -157,15 +124,9 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <motion.div
-            variants={rowReverse}
-            initial="right"
-            whileInView="left"
-            viewport={{ root: scrollRef, once: true }}
-            className="image-box"
-          >
+          <div className="image-box">
             <img src={Hoobank} alt="HooBank screenshots" className="sample" />
-          </motion.div>
+          </div>
         </motion.div>
         <motion.div
           variants={variants}
@@ -212,15 +173,9 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <motion.div
-            variants={row}
-            initial="left"
-            whileInView="right"
-            viewport={{ root: scrollRef, once: true }}
-            className="image-box"
-          >
+          <div className="image-box">
             <img src={Manage} alt="Manage screenshots" className="sample" />
-          </motion.div>
+          </div>
         </motion.div>
         <motion.div
           variants={variants}
@@ -267,19 +222,13 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <motion.div
-            variants={rowReverse}
-            initial="right"
-            whileInView="left"
-            viewport={{ root: scrollRef, once: true }}
-            className="image-box"
-          >
+          <div className="image-box">
             <img
               src={TipCalculator}
               alt="Tip Calculator screenshots"
               className="sample"
             />
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </motion.section>
