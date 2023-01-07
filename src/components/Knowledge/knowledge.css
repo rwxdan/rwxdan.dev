@@ -1,16 +1,14 @@
 .knowledge-sphere {
+  border-radius: 9999px;
+  max-width: fit-content;
+  margin-inline: auto;
   position: relative;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .sphere {
-  display: inline-block;
-  top: 0;
+  position: absolute;
   left: 0;
+  top: 0;
   font-family: var(--ff-mono);
   font-weight: 500;
   letter-spacing: 0.0625em;
