@@ -125,10 +125,11 @@
 
 .text-box .external-links .link {
   opacity: 0.7;
-  transition: opacity var(--ease-out-sine) var(--ms200);
+  transition: all var(--ease-out-sine) var(--ms200);
 }
 
 .text-box .external-links .link:hover {
+  transform: translateY(-0.125em);
   opacity: 1;
 }
 

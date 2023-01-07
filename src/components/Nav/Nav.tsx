@@ -25,7 +25,14 @@ const Nav = () => {
             {navLinks.map((item, index) => (
               <li key={item.id}>
                 <a
-                  href={`#${item.id}`}
+                  target={`${
+                    index === navLinks.length - 1 ? '_blank' : '_self'
+                  }`}
+                  href={`${
+                    index === navLinks.length - 1
+                      ? '/resume.pdf'
+                      : `#${item.id}`
+                  }`}
                   className={` ${
                     index === navLinks.length - 1
                       ? 'nav-links resume'
