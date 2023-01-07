@@ -163,12 +163,14 @@
     font-size: var(--fs-lg);
   }
   .projects-box {
-    gap: 3.5rem;
-    margin-block-start: -1rem;
+    gap: 3rem;
+    margin-block-start: -3.5rem;
   }
+
   .projects-box .sample-box,
   .projects-box .sample-box:nth-child(even) {
     flex-direction: column-reverse;
+    position: relative;
   }
   .projects-box .sample-box {
     border-bottom: 1px solid var(--primary-450);
