@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <nav className="nav">
       <div className="nav-logo-box">
-        <a href="#home">
+        <a href={`${location}`} onClick={() => location.reload()}>
           <img src={logo} alt="rwxdan" className="nav-logo" />
         </a>
       </div>
