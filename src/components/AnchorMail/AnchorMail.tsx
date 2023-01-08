@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Mail } from '../../globals/constants';
+import { Mail } from '../../constants';
 import './anchor_mail.css';
 const AnchorMail = () => {
   return (

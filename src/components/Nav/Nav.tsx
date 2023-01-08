@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import './nav.css';
 import logo from '/src/assets/logo.svg';
 import { Menu, Close } from '../../assets/icons';
-import { navLinks } from '../../globals/constants';
+import { navLinks } from '../../constants';
 const Nav = () => {
   const [Open, setOpen] = useState(false);
   return (

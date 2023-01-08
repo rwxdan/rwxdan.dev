@@ -1,4 +1,4 @@
-import { featured } from '../../globals/constants';
+import { featured } from '../../constants';
 import { GitHub, Share } from '../../assets/icons';
 import { motion } from 'framer-motion';
 const MoreProjects = () => {

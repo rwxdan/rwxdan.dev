@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Sample from '../Sample/Sample';
 import ShowMore from '../ShowMore/ShowMore';
-import { featured } from '../../globals/constants';
+import { featured } from '../../constants';
 import './projects.css';
 
 const Projects = () => {
