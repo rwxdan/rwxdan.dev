@@ -30,9 +30,9 @@
   white-space: nowrap;
   border-right: 3px solid var(--neutral-500);
   width: 0;
-  animation: type calc(var(--s5) + var(--ms300)) steps(66, end) forwards,
+  animation: type calc(var(--s5) + var(--ms500)) steps(67, end) forwards,
     blink var(--ms900) step-end 3 forwards;
-  animation-delay: var(--ms300), calc(var(--s3) + var(--ms300));
+  animation-delay: var(--ms300), var(--s3);
 }
 
 .hero .title {
@@ -56,8 +56,8 @@
   background-color: var(--primary-600);
   bottom: -4px;
   left: 0;
-  animation: underline var(--ms150) var(--ease-in-out-cubic) both;
-  animation-delay: calc(var(--s2) + var(--ms350));
+  animation: underline var(--ms350) var(--ease-in-out-quad) both;
+  animation-delay: calc(var(--s2) + var(--ms600));
 }
 
 .hero .title .break {
