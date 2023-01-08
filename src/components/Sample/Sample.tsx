@@ -13,16 +13,34 @@ interface Props {
 
 const Sample = (props: Props) => {
   const scrollRef = useRef(null);
-  let variants = {
+  const isMobile = window.innerWidth < 475;
+  let box = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
     },
   };
 
+  let images;
+
+  !isMobile
+    ? (images = {
+        hidden: {
+          scale: 0.7,
+        },
+        visible: {
+          scale: 1,
+          transition: {
+            delay: 0.1,
+            duration: 0.3,
+          },
+        },
+      })
+    : '';
+
   return (
     <motion.div
-      variants={variants}
+      variants={box}
       initial="hidden"
       whileInView="visible"
       viewport={{ root: scrollRef, once: true }}
@@ -48,9 +66,9 @@ const Sample = (props: Props) => {
         </div>
       </div>
       <motion.div
-        initial={{ scale: 0.7 }}
-        whileInView={{ scale: 1 }}
-        transition={{ delay: 0.1, duration: 0.3 }}
+        variants={images}
+        initial="hidden"
+        whileInView="visible"
         viewport={{ root: scrollRef, once: true }}
         className="image-box"
       >
