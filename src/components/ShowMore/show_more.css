@@ -1,0 +1,129 @@
+.show-more {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 4rem;
+  position: relative;
+}
+
+.show-more-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-family: var(--ff-mono);
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  color: var(--primary-500);
+  letter-spacing: 0.25px;
+  transition: all var(--ease-out-sine) var(--ms200);
+  position: relative;
+}
+
+.show-more-btn:hover {
+  color: var(--primary-600);
+  text-shadow: 0 0 0.25em var(--primary-500);
+}
+
+.show-more-btn:focus {
+  outline: none;
+}
+
+.show-more-btn::before,
+.show-more-btn::after {
+  content: '';
+  position: absolute;
+  background-color: var(--primary-450);
+  height: 1px;
+  width: 40%;
+  top: 50%;
+}
+
+.show-more-btn::before {
+  left: 0;
+}
+
+.show-more-btn::after {
+  right: 0;
+}
+
+.show-more .more-box {
+  margin-block-end: 5rem;
+}
+
+.show-more .more {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  gap: 2.125rem;
+}
+
+.more .card {
+  padding: 1.5em;
+  background-color: var(--neutral-410);
+  border: 1px solid var(--primary-450);
+  border-radius: 0.5em;
+  display: block;
+  color: var(--neutral-800);
+  text-decoration: none;
+  margin-inline: auto;
+  transition: all var(--ease-in-out-quad) var(--ms250);
+}
+
+.more .card:hover {
+  transform: scale(1.025);
+  box-shadow: 0 0.125em 0.375em var(--neutral-450);
+  border-color: var(--primary-500);
+}
+
+.more .card:hover .relevant .name {
+  color: var(--primary-600);
+}
+
+.card .relevant {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-block-end: 2rem;
+}
+
+.relevant .name {
+  font-family: var(--ff-sans-title);
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--neutral-750);
+}
+
+.relevant .external-links-box {
+  display: flex;
+  gap: 0.75em;
+}
+
+.relevant .external-link {
+  display: block;
+  opacity: 0.7;
+  transition: all var(--ease-out-sine) var(--ms200);
+}
+
+.relevant .external-link:hover {
+  opacity: 1;
+  transform: translateY(-0.125em);
+}
+
+.relevant .external-link .icon {
+  max-width: 1.5rem;
+}
+
+.card .stack {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card .stack .item {
+  background-color: var(--neutral-450);
+  padding: 0.5em 0.75em;
+  border-radius: 0.25em;
+  font-size: var(--fs-xs);
+  font-family: var(--ff-mono);
+  font-weight: 500;
+  color: var(--neutral-800);
+}

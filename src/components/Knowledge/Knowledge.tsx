@@ -9,7 +9,7 @@ const Knowledge = () => {
         className="knowledge-sphere"
         options={(w: Window & typeof globalThis): TagCloudOptions => ({
           radius:
-            Math.min(!isMobile ? 600 : 300, w.innerWidth, w.innerHeight) / 2,
+            Math.min(!isMobile ? 600 : 440, w.innerWidth, w.innerHeight) / 2,
           maxSpeed: 'fast',
           containerClass: 'sphere',
           itemClass: 'sphere--item',

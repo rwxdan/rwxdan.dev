@@ -32,6 +32,7 @@ const Contact = () => {
         <motion.ul
           initial={{ y: 100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.1, duration: 0.25 }}
           viewport={{ root: scrollRef, once: true }}
           className="contact-links"
         >

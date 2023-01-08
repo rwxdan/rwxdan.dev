@@ -4,11 +4,11 @@ import { GitHub, Share } from '../../assets/icons';
 
 interface Props {
   name: string;
-  info: string;
+  info?: string;
   stack: string[];
-  code: string;
-  live: string;
-  image: string;
+  code?: string;
+  live?: string;
+  image?: string;
 }
 
 const Sample = (props: Props) => {
@@ -47,7 +47,13 @@ const Sample = (props: Props) => {
           </a>
         </div>
       </div>
-      <div className="image-box">
+      <motion.div
+        initial={{ scale: 0.7 }}
+        whileInView={{ scale: 1 }}
+        transition={{ delay: 0.1, duration: 0.3 }}
+        viewport={{ root: scrollRef, once: true }}
+        className="image-box"
+      >
         <a target="_blank" href={props.live}>
           <img
             src={props.image}
@@ -55,7 +61,7 @@ const Sample = (props: Props) => {
             className="sample"
           />
         </a>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
