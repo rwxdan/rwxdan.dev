@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, ContactLinks } from '../../globals/constants';
+import { Mail, ContactLinks } from '../../constants';
 import './contact.css';
 const Contact = () => {
   const scrollRef = useRef(null);

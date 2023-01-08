@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Gh, In } from '../../globals/constants';
+import { Gh, In } from '../../constants';
 import { GitHub, Linkedin } from '../../assets/icons';
 import './anchor_links.css';
 const AnchorLinks = () => {

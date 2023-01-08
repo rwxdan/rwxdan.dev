@@ -6,9 +6,9 @@ import {
   GitHub,
   Gmail,
   FrontendMentor,
-} from '../../assets/icons';
+} from '../assets/icons';
 
-import { Blogr, Hoobank, Manage, TipCalculator } from '../../assets/images';
+import { Blogr, Hoobank, Manage, TipCalculator } from '../assets/images';
 
 export const navLinks: {
   title: string;
