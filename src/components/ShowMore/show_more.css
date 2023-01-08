@@ -127,3 +127,32 @@
   font-weight: 500;
   color: var(--neutral-800);
 }
+
+@media only screen and (max-width: 50em) {
+  .show-more {
+    margin-block-start: 1.5rem;
+  }
+  .show-more-btn::after,
+  .show-more-btn::before {
+    display: none;
+  }
+
+  .show-more .more-box {
+    margin-block-end: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .show-more .more {
+    grid-template-columns: 1fr;
+  }
+
+  .card .relevant {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card .stack {
+    justify-content: center;
+  }
+}
