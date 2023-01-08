@@ -20,7 +20,7 @@
 - [Vite](https://vitejs.dev/)
 - [React](https://reactjs.org/)
 - [TypeScript](https://typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
+- [react-spring](https://react-spring.dev/)
 - [@frank-mayer/react-tag-cloud](https://github.com/Frank-Mayer/react-tag-cloud)
 - [PostCSS](https://postcss.org/)
 - [Autoprefixer](https://autoprefixer.github.io/)

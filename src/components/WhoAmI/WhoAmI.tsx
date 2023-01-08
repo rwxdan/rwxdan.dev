@@ -1,17 +1,35 @@
-import { useRef } from 'react';
-import { motion } from 'framer-motion';
+import { useInView, animated } from '@react-spring/web';
 import Knowledge from '../Knowledge/Knowledge';
 import './whoami.css';
 const WhoAmI = () => {
-  const scrollRef = useRef(null);
+  const isMobile = window.innerWidth < 475;
+  let ref;
+  let springs;
+  !isMobile
+    ? ([ref, springs] = useInView(
+        () => ({
+          from: {
+            y: 100,
+            opacity: 0,
+          },
+          to: {
+            y: 0,
+            opacity: 1,
+          },
+          config: {
+            tension: 280,
+            friction: 60,
+          },
+        }),
+        {
+          once: true,
+          rootMargin: '0px 0px -30% 0px',
+        }
+      ))
+    : '';
   return (
     <section id="whoami" className="whoami">
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ root: scrollRef, once: true }}
-        className="whoami-box"
-      >
+      <animated.div ref={ref} style={springs} className="whoami-box">
         <div className="text-box">
           <h3 className="title">WhoAmI</h3>
           <p className="text">
@@ -76,7 +94,7 @@ const WhoAmI = () => {
           </p>
         </div>
         <Knowledge />
-      </motion.div>
+      </animated.div>
     </section>
   );
 };

@@ -1,11 +1,25 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { animated, useSpring } from '@react-spring/web';
 import './nav.css';
 import logo from '/src/assets/logo.svg';
 import { Menu, Close } from '../../assets/icons';
 import { navLinks } from '../../constants';
 const Nav = () => {
   const [Open, setOpen] = useState(false);
+  const springs = useSpring({
+    from: {
+      x: 100,
+      opacity: 0,
+    },
+    to: {
+      x: 0,
+      opacity: 1,
+    },
+    config: {
+      tension: 170,
+      friction: 14,
+    },
+  });
   return (
     <nav className="nav">
       <div className="nav-logo-box">
@@ -20,7 +34,7 @@ const Nav = () => {
           className="nav-menu"
           onClick={() => setOpen((prev) => !prev)}
         />
-        <motion.div initial={{ x: 100 }} animate={{ x: 0 }}>
+        <animated.div style={springs}>
           <ul className={`nav-links-box ${Open ? 'expanded' : ''}`}>
             {navLinks.map((item, index) => (
               <li key={item.id}>
@@ -44,7 +58,7 @@ const Nav = () => {
               </li>
             ))}
           </ul>
-        </motion.div>
+        </animated.div>
       </div>
     </nav>
   );

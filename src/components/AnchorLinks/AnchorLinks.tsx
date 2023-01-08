@@ -1,14 +1,24 @@
-import { motion } from 'framer-motion';
+import { animated, useSpring } from '@react-spring/web';
 import { Gh, In } from '../../constants';
 import { GitHub, Linkedin } from '../../assets/icons';
 import './anchor_links.css';
 const AnchorLinks = () => {
+  const springs = useSpring({
+    from: {
+      y: 100,
+      opacity: 0,
+    },
+    to: {
+      y: 0,
+      opacity: 1,
+    },
+    config: {
+      tension: 170,
+      friction: 14,
+    },
+  });
   return (
-    <motion.aside
-      initial={{ y: 100 }}
-      animate={{ y: 0 }}
-      className="anchor-links"
-    >
+    <animated.aside style={springs} className="anchor-links">
       <div className="links-box">
         <a href={Gh} target="_blank" className="link">
           <img src={GitHub} alt="GitHub" />
@@ -18,7 +28,7 @@ const AnchorLinks = () => {
         </a>
       </div>
       <div className="decoration"></div>
-    </motion.aside>
+    </animated.aside>
   );
 };
 

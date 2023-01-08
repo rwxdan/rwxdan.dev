@@ -1,14 +1,36 @@
-import { useRef } from 'react';
-import { motion } from 'framer-motion';
+import { animated, useInView } from '@react-spring/web';
 import { Mail, ContactLinks } from '../../constants';
 import './contact.css';
 const Contact = () => {
-  const scrollRef = useRef(null);
+  const isMobile = window.innerWidth < 475;
+  let ref;
+  let springs;
+  !isMobile
+    ? ([ref, springs] = useInView(
+        () => ({
+          from: {
+            y: 100,
+            opacity: 0,
+          },
+          to: {
+            y: 0,
+            opacity: 1,
+          },
+          config: {
+            tension: 210,
+            friction: 40,
+          },
+        }),
+        {
+          once: true,
+          rootMargin: '0px 0px -10% 0px',
+        }
+      ))
+    : '';
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ root: scrollRef, once: true }}
+    <animated.section
+      style={springs}
+      ref={ref}
       id="contact"
       className="contact"
     >
@@ -29,13 +51,7 @@ const Contact = () => {
         </a>
       </div>
       <div className="contact-links-box">
-        <motion.ul
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.1, duration: 0.25 }}
-          viewport={{ root: scrollRef, once: true }}
-          className="contact-links"
-        >
+        <animated.ul style={springs} ref={ref} className="contact-links">
           {ContactLinks.map((item) => (
             <li key={item.id}>
               <a target="_blank" href={item.link} className="link">
@@ -43,9 +59,9 @@ const Contact = () => {
               </a>
             </li>
           ))}
-        </motion.ul>
+        </animated.ul>
       </div>
-    </motion.section>
+    </animated.section>
   );
 };
 
