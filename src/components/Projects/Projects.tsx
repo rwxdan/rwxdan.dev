@@ -1,17 +1,32 @@
-import { useRef } from 'react';
-import { motion } from 'framer-motion';
+import { animated, useInView } from '@react-spring/web';
 import Sample from '../Sample/Sample';
 import ShowMore from '../ShowMore/ShowMore';
 import { featured } from '../../constants';
 import './projects.css';
 
 const Projects = () => {
-  const scrollRef = useRef(null);
+  const isMobile = window.innerWidth < 475;
+  let ref;
+  let springs;
+  !isMobile
+    ? ([ref, springs] = useInView(
+        () => ({
+          from: {
+            opacity: 0,
+          },
+          to: {
+            opacity: 1,
+          },
+        }),
+        {
+          once: true,
+        }
+      ))
+    : '';
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ root: scrollRef, once: true }}
+    <animated.section
+      style={springs}
+      ref={ref}
       id="projects"
       className="projects"
     >
@@ -31,7 +46,7 @@ const Projects = () => {
         ))}
       </div>
       <ShowMore />
-    </motion.section>
+    </animated.section>
   );
 };
 

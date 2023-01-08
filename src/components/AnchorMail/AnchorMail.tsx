@@ -1,18 +1,28 @@
-import { motion } from 'framer-motion';
+import { animated, useSpring } from '@react-spring/web';
 import { Mail } from '../../constants';
 import './anchor_mail.css';
 const AnchorMail = () => {
+  const springs = useSpring({
+    from: {
+      y: 100,
+      opacity: 0,
+    },
+    to: {
+      y: 0,
+      opacity: 1,
+    },
+    config: {
+      tension: 170,
+      friction: 14,
+    },
+  });
   return (
-    <motion.aside
-      initial={{ y: 100 }}
-      animate={{ y: 0 }}
-      className="anchor-mail"
-    >
+    <animated.aside style={springs} className="anchor-mail">
       <a href={`mailto:${Mail}`} className="mail">
         {Mail}
       </a>
       <div className="decoration"></div>
-    </motion.aside>
+    </animated.aside>
   );
 };
 

@@ -1,5 +1,4 @@
-import { useRef } from 'react';
-import { motion } from 'framer-motion';
+import { useInView, animated } from '@react-spring/web';
 import { GitHub, Share } from '../../assets/icons';
 
 interface Props {
@@ -12,40 +11,33 @@ interface Props {
 }
 
 const Sample = (props: Props) => {
-  const scrollRef = useRef(null);
   const isMobile = window.innerWidth < 475;
-  let box = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-    },
-  };
-
-  let images;
-
+  let ref;
+  let springs;
   !isMobile
-    ? (images = {
-        hidden: {
-          scale: 0.7,
-        },
-        visible: {
-          scale: 1,
-          transition: {
-            delay: 0.1,
-            duration: 0.3,
+    ? ([ref, springs] = useInView(
+        () => ({
+          from: {
+            y: 100,
+            opacity: 0,
           },
-        },
-      })
+          to: {
+            y: 0,
+            opacity: 1,
+          },
+          config: {
+            tension: 280,
+            friction: 60,
+          },
+        }),
+        {
+          once: true,
+          rootMargin: '0px 0px -15% 0px',
+        }
+      ))
     : '';
-
   return (
-    <motion.div
-      variants={box}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ root: scrollRef, once: true }}
-      className="sample-box"
-    >
+    <animated.div ref={ref} style={springs} className="sample-box">
       <div className="text-box">
         <h5 className="project-title">{props.name}</h5>
         <p className="project-info">{props.info}</p>
@@ -65,13 +57,7 @@ const Sample = (props: Props) => {
           </a>
         </div>
       </div>
-      <motion.div
-        variants={images}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ root: scrollRef, once: true }}
-        className="image-box"
-      >
+      <div className="image-box">
         <a target="_blank" href={props.live}>
           <img
             src={props.image}
@@ -79,8 +65,8 @@ const Sample = (props: Props) => {
             className="sample"
           />
         </a>
-      </motion.div>
-    </motion.div>
+      </div>
+    </animated.div>
   );
 };
 

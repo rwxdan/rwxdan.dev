@@ -1,27 +1,34 @@
+import { animated, useSpring } from '@react-spring/web';
 import { featured } from '../../constants';
 import { GitHub, Share } from '../../assets/icons';
-import { motion } from 'framer-motion';
 const MoreProjects = () => {
-  const box = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { delayChildren: 0.1 } },
-  };
-  const item = {
-    hidden: { y: -100, opacity: 0 },
-    visible: {
-      y: 0,
+  const box = useSpring({
+    from: {
+      opacity: 0,
+    },
+    to: {
       opacity: 1,
     },
-  };
+  });
+
+  const item = useSpring({
+    from: {
+      opacity: 0,
+      y: -100,
+    },
+    to: {
+      opacity: 1,
+      y: 0,
+    },
+    config: {
+      tension: 280,
+      friction: 30,
+    },
+  });
   return (
-    <motion.ul
-      variants={box}
-      initial="hidden"
-      animate="visible"
-      className="more"
-    >
+    <animated.ul style={box} className="more">
       {featured.slice(4).map((project) => (
-        <motion.li variants={item} key={project.id}>
+        <animated.li style={item} key={project.id}>
           <a target="_blank" href={project.live} className="card">
             <div className="relevant">
               <h6 className="name">{project.name}</h6>
@@ -50,9 +57,9 @@ const MoreProjects = () => {
               ))}
             </ul>
           </a>
-        </motion.li>
+        </animated.li>
       ))}
-    </motion.ul>
+    </animated.ul>
   );
 };
 
