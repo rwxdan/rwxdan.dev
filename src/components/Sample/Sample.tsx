@@ -4,11 +4,11 @@ import { GitHub, Share } from '../../assets/icons';
 
 interface Props {
   name: string;
-  info: string;
+  info?: string;
   stack: string[];
-  code: string;
-  live: string;
-  image: string;
+  code?: string;
+  live?: string;
+  image?: string;
 }
 
 const Sample = (props: Props) => {
