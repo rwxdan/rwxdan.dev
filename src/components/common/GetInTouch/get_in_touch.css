@@ -1,0 +1,20 @@
+.get-in-touch-box .get-in-touch {
+  display: block;
+  max-width: fit-content;
+  margin-block: 1.5rem;
+  text-decoration: none;
+  padding: 0.625em 1.5em;
+  font-family: var(--ff-mono);
+  font-size: var(--fs-base);
+  font-weight: 700;
+  color: var(--neutral-400);
+  letter-spacing: 0.25px;
+  background-color: var(--primary-600);
+  border-radius: 50em;
+  transition: all var(--ease-out-sine) var(--ms200);
+}
+
+.get-in-touch-box .get-in-touch:hover {
+  background-color: var(--primary-570);
+  box-shadow: 0 0 0.5em var(--neutral-500);
+}
