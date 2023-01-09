@@ -28,7 +28,7 @@
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 <div align="center">
- <h4>
+ <p>
   Credits to <a href="https://github.com/bchiang7">Brittany Chiang</a>, for some elements I took inspiration from <a href="https://brittanychiang.com/">their website</a>.
- </h4>
+ </p>
 </div>
