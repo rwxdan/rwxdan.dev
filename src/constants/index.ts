@@ -23,8 +23,8 @@ export const navLinks: {
     id: 'projects',
   },
   {
-    title: 'Contact',
-    id: 'contact',
+    title: 'Connect',
+    id: 'connect',
   },
   {
     title: 'Resume',
@@ -36,7 +36,7 @@ export const Mail = 'rwxdan@gmail.com';
 export const Gh = 'https://github.com/rwxdan';
 export const In = 'https://www.linkedin.com/in/rwxdan/';
 
-export const ContactLinks: {
+export const connectLinks: {
   id: string;
   link: string;
   icon: string;
