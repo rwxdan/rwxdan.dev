@@ -24,6 +24,7 @@
 - [@frank-mayer/react-tag-cloud](https://github.com/Frank-Mayer/react-tag-cloud)
 - [PostCSS](https://postcss.org/)
 - [Autoprefixer](https://autoprefixer.github.io/)
+- [Figma](https://www.figma.com/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
