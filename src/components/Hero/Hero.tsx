@@ -1,4 +1,5 @@
 import { animated, useSpring } from '@react-spring/web';
+import GetInTouch from '../common/GetInTouch/GetInTouch';
 import './hero.css';
 import { Me } from '../../assets/images';
 const Hero = () => {
@@ -58,6 +59,7 @@ const Hero = () => {
                 I'm currently looking for new opportunities!
               </span>
             </p>
+            <GetInTouch />
           </animated.div>
         </div>
         <animated.div style={firstBoot} className="image-box">
