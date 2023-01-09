@@ -1,0 +1,41 @@
+.loading {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: var(--neutral-400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  animation: acme var(--ease-in-out-cubic) var(--ms500) both;
+  animation-delay: var(--s3);
+  box-shadow: 0 1rem 3.25rem var(--neutral-450);
+}
+
+.loading .acme {
+  width: 10.125rem;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.acme .icon {
+  width: 7.5rem;
+  animation: scale var(--ease-in-out-quad) var(--s1) forwards;
+}
+
+.acme .bar {
+  width: 0;
+  height: 4px;
+  border-radius: 50em;
+  background-color: var(--primary-600);
+  animation: underline var(--ease-in-out-quad) var(--s2) both;
+  animation-delay: var(--s1);
+  transform-origin: right;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
