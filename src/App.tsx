@@ -1,4 +1,6 @@
+import { useState, useEffect } from 'react';
 import {
+  LoadingEffect,
   Nav,
   AnchorLinks,
   AnchorMail,
@@ -10,17 +12,32 @@ import {
   AnalyticsComponent,
 } from './components';
 const App = () => {
+  const [Loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3500);
+  }, []);
+
   return (
     <main>
-      <Nav />
-      <AnchorLinks />
-      <AnchorMail />
-      <Hero />
-      <WhoAmI />
-      <Projects />
-      <Contact />
-      <Footer />
-      <AnalyticsComponent />
+      {Loading ? (
+        <LoadingEffect />
+      ) : (
+        <div>
+          <Nav />
+          <AnchorLinks />
+          <AnchorMail />
+          <Hero />
+          <WhoAmI />
+          <Projects />
+          <Contact />
+          <Footer />
+          <AnalyticsComponent />
+        </div>
+      )}
     </main>
   );
 };
