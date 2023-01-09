@@ -75,8 +75,7 @@
   font-family: var(--ff-sans-title);
   letter-spacing: 0.2px;
   font-weight: 800;
-  color: var(--neutral-700);
-  opacity: 0.6;
+  color: var(--neutral-750);
   line-height: 1.2;
 }
 
