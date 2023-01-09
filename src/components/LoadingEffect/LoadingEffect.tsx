@@ -12,10 +12,7 @@ const LoadingEffect = () => {
               height="146"
               width="128"
             >
-              <g
-                id="tight-bounds"
-                transform="matrix(1,0,0,1,0.15422077209916552,-0.24049999999999727)"
-              >
+              <g transform="matrix(1,0,0,1,0.15422077209916552,-0.24049999999999727)">
                 <svg
                   viewBox="0 0 82.69155845580168 95.481"
                   height="95.481"
@@ -60,7 +57,6 @@ const LoadingEffect = () => {
                                           height="95.481"
                                           width="82.69155845580168"
                                           data-fill-palette-color="accent"
-                                          id="icon-0"
                                         >
                                           <polygon
                                             points="38.182,57.753 20.18,47.91 20.18,42.455 38.182,32.652 38.182,39.074 25.625,45.113 38.182,51.379 "
