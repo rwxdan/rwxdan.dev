@@ -36,3 +36,24 @@
     width: 100%;
   }
 }
+
+@keyframes scale {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1.15;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes acme {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
