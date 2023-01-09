@@ -99,6 +99,11 @@
   font-weight: 700;
 }
 
+.hero .text-box .get-in-touch {
+  margin-block-start: 1.25em;
+  font-size: var(--fs-base);
+}
+
 .hero .image-box {
   display: flex;
   justify-content: flex-end;
@@ -221,6 +226,10 @@
   .hero .intro {
     margin-inline: auto;
     font-size: var(--fs-base);
+  }
+
+  .hero .text-box .get-in-touch {
+    margin-inline: auto;
   }
 
   .hero .image-wrapper .profile {
