@@ -7,7 +7,7 @@ import {
   Hero,
   WhoAmI,
   Projects,
-  Contact,
+  Connect,
   Footer,
   AnalyticsComponent,
 } from './components';
@@ -33,7 +33,7 @@ const App = () => {
           <Hero />
           <WhoAmI />
           <Projects />
-          <Contact />
+          <Connect />
           <Footer />
           <AnalyticsComponent />
         </div>

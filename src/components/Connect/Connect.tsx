@@ -1,7 +1,8 @@
 import { animated, useInView } from '@react-spring/web';
-import { Mail, ContactLinks } from '../../constants';
-import './contact.css';
-const Contact = () => {
+import { connectLinks } from '../../constants';
+import GetInTouch from '../common/GetInTouch/GetInTouch';
+import './connect.css';
+const Connect = () => {
   const isMobile = window.innerWidth < 475;
   let ref;
   let springs;
@@ -31,12 +32,12 @@ const Contact = () => {
     <animated.section
       style={springs}
       ref={ref}
-      id="contact"
-      className="contact"
+      id="connect"
+      className="connect"
     >
       <div className="cta-box">
         <h3 className="title">What's Next?</h3>
-        <h4 className="sub-title">Let's talk</h4>
+        <h4 className="sub-title">Let's get in touch</h4>
         <p className="text">
           I'm <span className="bold">actively</span> looking for{' '}
           <span className="bold">new opportunities</span>. But don't worry, even
@@ -46,13 +47,11 @@ const Contact = () => {
           <span className="bold">recommendation</span> or just to{' '}
           <span className="bold">say hi!</span>
         </p>
-        <a href={`mailto:${Mail}`} className="cta">
-          Say Hi!
-        </a>
+        <GetInTouch />
       </div>
-      <div className="contact-links-box">
-        <animated.ul style={springs} ref={ref} className="contact-links">
-          {ContactLinks.map((item) => (
+      <div className="connect-links-box">
+        <animated.ul style={springs} ref={ref} className="connect-links">
+          {connectLinks.map((item) => (
             <li key={item.id}>
               <a target="_blank" href={item.link} className="link">
                 <img src={item.icon} alt={item.id} />
@@ -65,4 +64,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Connect;
