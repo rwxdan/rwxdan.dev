@@ -1,4 +1,4 @@
-import icon from '/favicon.png';
+import icon from '../../assets/icon_logo.svg';
 import './loading_effect.css';
 const LoadingEffect = () => {
   return (
