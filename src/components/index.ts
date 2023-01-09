@@ -5,6 +5,6 @@ export { default as AnchorLinks } from './AnchorLinks/AnchorLinks';
 export { default as AnchorMail } from './AnchorMail/AnchorMail';
 export { default as WhoAmI } from './WhoAmI/WhoAmI';
 export { default as Projects } from './Projects/Projects';
-export { default as Contact } from './Contact/Contact';
+export { default as Connect } from './Connect/Connect';
 export { default as Footer } from './Footer/Footer';
 export { default as AnalyticsComponent } from './Analytics/AnalyticsComponent';
