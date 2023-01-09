@@ -8,7 +8,7 @@
   justify-content: center;
   z-index: 100;
   animation: acme var(--ease-in-out-cubic) var(--ms500) both;
-  animation-delay: var(--s3);
+  animation-delay: calc(var(--s3) + var(--ms300));
   box-shadow: 0 1rem 3.25rem var(--neutral-450);
 }
 
@@ -24,7 +24,9 @@
 
 .acme .icon {
   width: 7.5rem;
+  transform: scale(0);
   animation: scale var(--ease-in-out-quad) var(--s1) forwards;
+  animation-delay: var(--ms300);
 }
 
 .acme .bar {
@@ -33,7 +35,7 @@
   border-radius: 50em;
   background-color: var(--primary-600);
   animation: underline var(--ease-in-out-quad) var(--s2) both;
-  animation-delay: var(--s1);
+  animation-delay: calc(var(--s1) + var(--ms300));
   transform-origin: right;
   position: absolute;
   bottom: 0;
