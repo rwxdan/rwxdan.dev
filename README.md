@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/rwxdan/rwxdan.dev/blob/main/public/favicon.svg" width="100" />
+  <img alt="Logo" src="https://github.com/rwxdan/rwxdan.dev/blob/main/public/favicon.png" width="100" />
 </div>
 <h1 align="center">
   rwxdan.dev
