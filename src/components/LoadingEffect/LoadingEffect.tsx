@@ -53,7 +53,7 @@ const LoadingEffect = () => {
                                           x="0"
                                           y="0"
                                           viewBox="9.465 3.969 71.07 82.06200000000001"
-                                          enable-background="new 0 0 90 90"
+                                          enableBackground="new 0 0 90 90"
                                           height="95.481"
                                           width="82.69155845580168"
                                           data-fill-palette-color="accent"
