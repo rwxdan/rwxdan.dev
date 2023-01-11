@@ -6,28 +6,27 @@ const Connect = () => {
   const isMobile = window.innerWidth < 475;
   let ref;
   let springs;
-  !isMobile
-    ? ([ref, springs] = useInView(
-        () => ({
-          from: {
-            y: 100,
-            opacity: 0,
-          },
-          to: {
-            y: 0,
-            opacity: 1,
-          },
-          config: {
-            tension: 210,
-            friction: 40,
-          },
-        }),
-        {
-          once: true,
-          rootMargin: '0px 0px -10% 0px',
-        }
-      ))
-    : '';
+  !isMobile &&
+    ([ref, springs] = useInView(
+      () => ({
+        from: {
+          y: 100,
+          opacity: 0,
+        },
+        to: {
+          y: 0,
+          opacity: 1,
+        },
+        config: {
+          tension: 210,
+          friction: 40,
+        },
+      }),
+      {
+        once: true,
+        rootMargin: '0px 0px -10% 0px',
+      }
+    ));
   return (
     <animated.section
       style={springs}

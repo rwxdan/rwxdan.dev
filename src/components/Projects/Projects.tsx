@@ -8,21 +8,20 @@ const Projects = () => {
   const isMobile = window.innerWidth < 475;
   let ref;
   let springs;
-  !isMobile
-    ? ([ref, springs] = useInView(
-        () => ({
-          from: {
-            opacity: 0,
-          },
-          to: {
-            opacity: 1,
-          },
-        }),
-        {
-          once: true,
-        }
-      ))
-    : '';
+  !isMobile &&
+    ([ref, springs] = useInView(
+      () => ({
+        from: {
+          opacity: 0,
+        },
+        to: {
+          opacity: 1,
+        },
+      }),
+      {
+        once: true,
+      }
+    ));
   return (
     <animated.section
       style={springs}
