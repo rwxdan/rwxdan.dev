@@ -6,7 +6,7 @@ import { Menu, Close } from '../../assets/icons';
 import { navLinks } from '../../constants';
 const Nav = () => {
   const [Open, setOpen] = useState(false);
-  const springs = useSpring({
+  const a_links = useSpring({
     from: {
       x: 100,
       opacity: 0,
@@ -16,17 +16,29 @@ const Nav = () => {
       opacity: 1,
     },
     config: {
-      tension: 170,
+      tension: 180,
+      friction: 14,
+    },
+  });
+  const a_logo = useSpring({
+    from: {
+      opacity: 0,
+    },
+    to: {
+      opacity: 1,
+    },
+    config: {
+      tension: 180,
       friction: 14,
     },
   });
   return (
     <nav className="nav">
-      <div className="nav-logo-box">
+      <animated.div style={a_logo} className="nav-logo-box">
         <a href={`${location}`} onClick={() => location.reload()}>
           <img src={logo} alt="rwxdan" className="nav-logo" />
         </a>
-      </div>
+      </animated.div>
       <div>
         <img
           src={Open ? Close : Menu}
@@ -34,7 +46,7 @@ const Nav = () => {
           className="nav-menu"
           onClick={() => setOpen((prev) => !prev)}
         />
-        <animated.div style={springs}>
+        <animated.div style={a_links}>
           <ul className={`nav-links-box ${Open ? 'expanded' : ''}`}>
             {navLinks.map((item, index) => (
               <li key={item.id}>
