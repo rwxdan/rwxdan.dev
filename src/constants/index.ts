@@ -90,7 +90,7 @@ export const featured: {
   {
     id: 'blogr',
     name: 'Blogr Landing Page',
-    info: 'A landing page for a fictional platform. The assets, design and guidelines were provided by Frontend Mentor.',
+    info: 'Concept landing page for Blogr, a fictional platform. This landing page in particular has something special to it, a nav-bar with triple dropdown menus and a multi-level footer. I had some fun with React hooks and the DRY principle while coding it!',
     stack: ['PostCSS', 'React', 'TailwindCSS', 'Vite'],
     code: 'https://github.com/rwxdan/blogr-landing-page',
     live: 'https://rwxdan-blogr-lp.netlify.app/',
@@ -108,7 +108,7 @@ export const featured: {
   {
     id: 'manage',
     name: 'Manage Landing Page',
-    info: "Manage is one of the most fun builds I've coded so far. This SPA has a relatively complex layout and its responsiveness was a real challenge. The assets, design and guidelines were provided by Frontend Mentor.",
+    info: "Manage is one of the most fun builds I've coded so far. This app has a relatively complex layout and its responsiveness was a real challenge to deal with. The assets were provided by FEM.",
     stack: ['PostCSS', 'React', 'Framer Motion', 'Vite'],
     code: 'https://github.com/rwxdan/manage-landing-page',
     live: 'https://manage-landing-page-rwxdan.vercel.app/',
@@ -117,7 +117,7 @@ export const featured: {
   {
     id: 'tip',
     name: 'Tip Calculator App',
-    info: "Supose that you're on a restaurant with some friends and you want to calculate the amount of money by tip percentage that each one has to pay, plus the bill amount. Tip Calculator lets you easily do that! The assets, design and guidelines were provided by Frontend Mentor.",
+    info: "Supose that you're on a restaurant with some friends and you want to calculate the amount of money by tip percentage that each one has to pay, plus the bill amount. Tip Calculator lets you easily do that!",
     stack: ['HTML', 'JavaScript', 'SCSS'],
     code: 'https://github.com/rwxdan/tip-calculator-app',
     live: 'https://rwxdan.github.io/tip-calculator-app',
