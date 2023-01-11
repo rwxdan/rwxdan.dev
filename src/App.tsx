@@ -40,12 +40,12 @@ const App = () => {
         <div>
           <Nav />
           <main>
-            <AnchorLinks />
-            <AnchorMail />
             <Hero />
             <WhoAmI />
             <Projects />
             <Connect />
+            <AnchorLinks />
+            <AnchorMail />
             <Footer />
             <AnalyticsComponent />
           </main>
