@@ -6,38 +6,37 @@ const Hero = () => {
   const isMobile = window.innerWidth < 800;
   let firstBoot;
   let secondBoot;
-  !isMobile
-    ? ((firstBoot = useSpring({
-        from: {
-          opacity: 0,
-          y: 50,
-        },
-        to: {
-          opacity: 1,
-          y: 0,
-        },
-        delay: 1900,
-        config: {
-          tension: 210,
-          friction: 30,
-        },
-      })),
-      (secondBoot = useSpring({
-        from: {
-          opacity: 0,
-          y: 30,
-        },
-        to: {
-          opacity: 1,
-          y: 0,
-        },
-        delay: 2200,
-        config: {
-          tension: 280,
-          friction: 60,
-        },
-      })))
-    : '';
+  !isMobile &&
+    ((firstBoot = useSpring({
+      from: {
+        opacity: 0,
+        y: 50,
+      },
+      to: {
+        opacity: 1,
+        y: 0,
+      },
+      delay: 1900,
+      config: {
+        tension: 210,
+        friction: 30,
+      },
+    })),
+    (secondBoot = useSpring({
+      from: {
+        opacity: 0,
+        y: 30,
+      },
+      to: {
+        opacity: 1,
+        y: 0,
+      },
+      delay: 2200,
+      config: {
+        tension: 280,
+        friction: 60,
+      },
+    })));
   return (
     <section className="hero">
       <div className="hero-box">

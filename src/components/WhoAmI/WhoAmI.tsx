@@ -5,28 +5,27 @@ const WhoAmI = () => {
   const isMobile = window.innerWidth < 475;
   let ref;
   let springs;
-  !isMobile
-    ? ([ref, springs] = useInView(
-        () => ({
-          from: {
-            y: 100,
-            opacity: 0,
-          },
-          to: {
-            y: 0,
-            opacity: 1,
-          },
-          config: {
-            tension: 280,
-            friction: 60,
-          },
-        }),
-        {
-          once: true,
-          rootMargin: '0px 0px -30% 0px',
-        }
-      ))
-    : '';
+  !isMobile &&
+    ([ref, springs] = useInView(
+      () => ({
+        from: {
+          y: 100,
+          opacity: 0,
+        },
+        to: {
+          y: 0,
+          opacity: 1,
+        },
+        config: {
+          tension: 280,
+          friction: 60,
+        },
+      }),
+      {
+        once: true,
+        rootMargin: '0px 0px -30% 0px',
+      }
+    ));
   return (
     <section id="whoami" className="whoami">
       <animated.div ref={ref} style={springs} className="whoami-box">
