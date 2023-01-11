@@ -47,7 +47,7 @@ const Nav = () => {
           onClick={() => setOpen((prev) => !prev)}
         />
         <animated.div style={a_links}>
-          <ul className={`nav-links-box ${Open ? 'expanded' : ''}`}>
+          <ul className={`nav-links-box ${Open && 'expanded'}`}>
             {navLinks.map((item, index) => (
               <li key={item.id}>
                 <a
