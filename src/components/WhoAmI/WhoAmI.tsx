@@ -42,25 +42,8 @@ const WhoAmI = () => {
             do love <span className="bold">learning</span> new things!
           </p>
           <p className="text">
-            Before being around the <span className="mono">IT</span> world I
-            studied <span className="bold">Finances</span>, I even got a job at
-            the{' '}
-            <a
-              target="_blank"
-              href="https://en.wikipedia.org/wiki/Central_Bank_of_Venezuela"
-              className="external-link"
-            >
-              BCV
-            </a>
-            . However, at the start of <span className="mono">2020</span> I had
-            some free time in my hands, I wanted to{' '}
-            <span className="bold">explore</span> something else than
-            spreadsheets and such. <span className="mono">Python</span> and{' '}
-            <span className="mono">Linux</span> crossed my mind, so why not?
-          </p>
-          <p className="text">
-            Fast-forward to today, I've had the joy of gathering knowledge and
-            skills around <span className="bold">Software Development</span>,{' '}
+            I've had the joy of gathering knowledge and skills around{' '}
+            <span className="bold">Software Development</span>,{' '}
             <span className="bold">System Administration</span> and{' '}
             <span className="bold">Networking</span>. I might not be an expert
             on any of those, but I'm proud to say that I've had the privilege of
@@ -88,8 +71,20 @@ const WhoAmI = () => {
             >
               Oracle
             </a>
-            . You wouldn't imagine, it turns out that what I'm most passionate
-            about is <span className="bold">Web Development!</span>
+            .
+          </p>
+          <p className="text">
+            What I'm most passionate about, however, is{' '}
+            <span className="bold">Web Development.</span> My Frontend skills
+            are spread across many projects that I built by using vanilla{' '}
+            <span className="bold">HTML</span>,{' '}
+            <span className="bold">CSS</span> and{' '}
+            <span className="bold">JavaScript</span>. Also{' '}
+            <span className="bold">TypeScript</span>,{' '}
+            <span className="bold">React</span>,{' '}
+            <span className="bold">TailwindCSS</span>,{' '}
+            <span className="bold">SCSS</span> and many other libraries that I
+            continue to learn and build with every day!
           </p>
         </div>
         <Knowledge />
