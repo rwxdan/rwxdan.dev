@@ -1,11 +1,25 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { animated, useSpring } from '@react-spring/web';
 import './nav.css';
 import logo from '/src/assets/logo.svg';
 import { Menu, Close } from '../../assets/icons';
 import { navLinks } from '../../constants';
 const Nav = () => {
-  const [Open, setOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   const a_links = useSpring({
     from: {
       x: 100,
@@ -20,6 +34,7 @@ const Nav = () => {
       friction: 14,
     },
   });
+
   const a_logo = useSpring({
     from: {
       opacity: 0,
@@ -32,8 +47,10 @@ const Nav = () => {
       friction: 14,
     },
   });
+
+  const [Open, setOpen] = useState(false);
   return (
-    <nav className="nav">
+    <nav id="nav" className={`nav ${scrollPosition && 'blur-bg'}`}>
       <animated.div style={a_logo} className="nav-logo-box">
         <a href={`${location}`} onClick={() => location.reload()}>
           <img src={logo} alt="rwxdan" className="nav-logo" />
@@ -47,7 +64,11 @@ const Nav = () => {
           onClick={() => setOpen((prev) => !prev)}
         />
         <animated.div style={a_links}>
-          <ul className={`nav-links-box ${Open && 'expanded'}`}>
+          <ul
+            className={`nav-links-box ${Open && 'expanded'} ${
+              scrollPosition && 'fix'
+            }`}
+          >
             {navLinks.map((item, index) => (
               <li key={item.id}>
                 <a
