@@ -52,7 +52,7 @@ const Nav = () => {
   return (
     <nav id="nav" className={`nav ${scrollPosition && 'blur-bg'}`}>
       <animated.div style={a_logo} className="nav-logo-box">
-        <a href={`${location}`} onClick={() => location.reload()}>
+        <a href={`${location}`} onClick={() => location.reload}>
           <img src={logo} alt="rwxdan" className="nav-logo" />
         </a>
       </animated.div>
