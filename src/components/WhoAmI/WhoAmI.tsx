@@ -32,32 +32,34 @@ const WhoAmI = () => {
         <div className="text-box">
           <h3 className="title">About</h3>
           <p className="text">
-            My name is Daniel. I'm a Front-end Web Developer based in Venezuela.
+            My name is Daniel. I'm a front-end web developer based in Venezuela.
             I'm <span className="bold">passionate</span> about cutting-edge,
-            pixel-perfect, responsive and dynamic user experiences.{' '}
+            pixel-perfect, responsive user interfaces, and dynamic user
+            experiences.{' '}
           </p>
 
           <p className="text">
-            It all started when I wanted to manipulate the dashboard of a
-            self-hosted web service, adjust some colors, text, paddings, tweak
-            here and there — at that time, I didn't imagine that hacking around{' '}
-            <span className="bold">HTML</span> and{' '}
-            <span className="bold">CSS</span> could get this far. It turned out
-            to be <span className="bold">much</span> more than that!
+            My enthusiasm for web development began when I found myself hacking
+            together a local web dashboard — at that time, I didn't imagine that
+            tinkering with <span className="bold">HTML</span>,{' '}
+            <span className="bold">CSS</span> and{' '}
+            <span className="bold">JavaScript</span> could get this far, yet it
+            turned out to be <span className="bold">much</span> more than that!
           </p>
 
           <p className="text">
             Nowadays, I don't keep <span className="italic">hacking</span>{' '}
-            around <span className="bold">HTML</span> and{' '}
-            <span className="bold">CSS</span> anymore. My focus now is to
-            develop things for the real world by using those, and of course{' '}
-            <span className="bold">JavaScript</span>,{' '}
+            around with <span className="bold">HTML</span>,{' '}
+            <span className="bold">CSS</span> and{' '}
+            <span className="bold">JavaScript</span> anymore — my{' '}
+            <span className="bold">focus</span> now is to develop things for the
+            real world by using them! And of course{' '}
             <span className="bold">TypeScript</span>,{' '}
             <span className="bold">React</span>,{' '}
             <span className="bold">TailwindCSS</span>,{' '}
-            <span className="bold">SCSS</span>, and many more frameworks and
+            <span className="bold">SCSS</span>, and many other frameworks and
             libraries that I work with every day.{' '}
-            <a href="#projects" className="external-link">
+            <a href="#projects" className="internal-link">
               {' '}
               Let me show you what I can do with them!
             </a>
