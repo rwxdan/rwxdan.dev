@@ -43,8 +43,8 @@ const WhoAmI = () => {
           </p>
 
           <p className="text">
-            My Frontend skills are spread across many projects that I built by
-            using vanilla <span className="bold">HTML</span>,{' '}
+            My Frontend skills are spread across many projects that I've built
+            by using vanilla <span className="bold">HTML</span>,{' '}
             <span className="bold">CSS</span> and{' '}
             <span className="bold">JavaScript</span>. Also{' '}
             <span className="bold">TypeScript</span>,{' '}
