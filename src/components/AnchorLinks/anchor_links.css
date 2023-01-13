@@ -30,7 +30,7 @@
   background-color: var(--primary-500);
 }
 
-.anchor-links .links-box .link:is(:hover, :focus-visible) {
+.anchor-links .links-box .link:is(:focus, :active, :hover) {
   opacity: 1;
   transform: translateY(-0.125em);
 }

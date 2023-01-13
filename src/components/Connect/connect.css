@@ -77,7 +77,7 @@
   transition: all var(--ease-out-sine) var(--ms200);
 }
 
-.connect-links .link:is(:hover, :focus-within) {
+.connect-links .link:is(:focus, :active, :hover) {
   opacity: 1;
   transform: translateY(-0.125em);
 }

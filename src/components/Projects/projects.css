@@ -102,7 +102,7 @@
   transition: all var(--ease-out-sine) var(--ms200);
 }
 
-.text-box .external-links .link:is(:hover, :focus-within) {
+.text-box .external-links .link:is(:focus, :active, :hover) {
   transform: translateY(-0.125em);
   opacity: 1;
 }

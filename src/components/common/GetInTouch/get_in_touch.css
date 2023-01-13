@@ -14,7 +14,7 @@
   transition: all var(--ease-out-sine) var(--ms200);
 }
 
-.get-in-touch-box .get-in-touch:is(:hover, :focus-within) {
+.get-in-touch-box .get-in-touch:is(:focus, :active, :hover) {
   background-color: var(--primary-570);
   box-shadow: 0 0 0.5em var(--neutral-500);
 }
