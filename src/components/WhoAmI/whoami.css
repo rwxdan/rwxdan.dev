@@ -75,11 +75,11 @@
   left: 0;
 }
 
-.whoami .text .external-link:hover {
+.whoami .text .external-link:is(:hover, :focus-within) {
   opacity: 0.7;
 }
 
-.whoami .text .external-link:hover::after {
+.whoami .text .external-link:is(:hover, :focus-within)::after {
   animation: underline var(--ease-out-sine) var(--ms200) forwards;
 }
 
