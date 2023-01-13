@@ -32,7 +32,7 @@ const WhoAmI = () => {
         <div className="text-box">
           <h3 className="title">WhoAmI</h3>
           <p className="text">
-            Hi there! My name is Daniel. I'm a self-taught Web developer from
+            Hi there! My name is Daniel. I'm a Front-end Web Developer from
             Venezuela. As far back as I can remember, I've always been curious
             about how
             <span className="italic"> things</span> work. Oftentimes I found
@@ -41,50 +41,18 @@ const WhoAmI = () => {
             <span className="bold">transforming </span>it. Truth to be told, I
             do love <span className="bold">learning</span> new things!
           </p>
+
           <p className="text">
-            I've had the joy of gathering knowledge and skills around{' '}
-            <span className="bold">Software Development</span>,{' '}
-            <span className="bold">System Administration</span> and{' '}
-            <span className="bold">Networking</span>. I might not be an expert
-            on any of those, but I'm proud to say that I've had the privilege of
-            collaborating with engineers from{' '}
-            <a
-              target="_blank"
-              href="https://www.cisco.com/"
-              className="external-link"
-            >
-              Cisco
-            </a>
-            ,{' '}
-            <a
-              target="_blank"
-              href="https://www.redhat.com/en"
-              className="external-link"
-            >
-              Red Hat
-            </a>{' '}
-            and{' '}
-            <a
-              target="_blank"
-              href="https://www.oracle.com/"
-              className="external-link"
-            >
-              Oracle
-            </a>
-            .
-          </p>
-          <p className="text">
-            What I'm most passionate about, however, is{' '}
-            <span className="bold">Web Development.</span> My Frontend skills
-            are spread across many projects that I built by using vanilla{' '}
-            <span className="bold">HTML</span>,{' '}
+            My Frontend skills are spread across many projects that I've built
+            by using vanilla <span className="bold">HTML</span>,{' '}
             <span className="bold">CSS</span> and{' '}
             <span className="bold">JavaScript</span>. Also{' '}
             <span className="bold">TypeScript</span>,{' '}
             <span className="bold">React</span>,{' '}
             <span className="bold">TailwindCSS</span>,{' '}
             <span className="bold">SCSS</span> and many other libraries that I
-            continue to learn and build with every day!
+            continue to learn and build with{' '}
+            <span className="bold">every day!</span>
           </p>
         </div>
         <Knowledge />

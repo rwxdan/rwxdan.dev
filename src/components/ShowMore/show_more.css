@@ -64,11 +64,11 @@
   color: var(--neutral-800);
   text-decoration: none;
   margin-inline: auto;
-  transition: all var(--ease-in-out-quad) var(--ms250);
+  transition: all var(--ease-in-out-quad) var(--ms300);
 }
 
 .more .card:is(:hover, :focus-within) {
-  transform: scale(1.025);
+  transform: translateY(-0.125em);
   box-shadow: 0 0.125em 0.375em var(--neutral-450);
   border-color: var(--primary-500);
 }
