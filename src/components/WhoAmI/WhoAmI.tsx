@@ -55,7 +55,7 @@ const WhoAmI = () => {
             <span className="bold">TypeScript</span>,{' '}
             <span className="bold">React</span>,{' '}
             <span className="bold">TailwindCSS</span>,{' '}
-            <span className="bold">SCSS</span>, and many other frameworks and
+            <span className="bold">SCSS</span>, and many more frameworks and
             libraries that I work with every day.{' '}
             <a href="#projects" className="external-link">
               {' '}
