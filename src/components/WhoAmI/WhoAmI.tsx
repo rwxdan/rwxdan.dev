@@ -13,7 +13,7 @@ const WhoAmI = () => {
           opacity: 0,
         },
         to: {
-          y: 0,
+          y: -20,
           opacity: 1,
         },
         config: {
@@ -23,7 +23,7 @@ const WhoAmI = () => {
       }),
       {
         once: true,
-        rootMargin: '0px 0px -30% 0px',
+        rootMargin: '0px 0px -25% 0px',
       }
     ));
   return (
