@@ -38,7 +38,7 @@ const WhoAmI = () => {
           </p>
 
           <p className="text">
-            It all started when I wanted to manipulate a dashboard for a
+            It all started when I wanted to manipulate the dashboard of a
             self-hosted web service, adjust some colors, text, paddings, tweak
             here and there — at that time, I didn't imagine that hacking around{' '}
             <span className="bold">HTML</span> and{' '}
