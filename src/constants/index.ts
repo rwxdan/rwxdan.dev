@@ -15,8 +15,8 @@ export const navLinks: {
   id: string;
 }[] = [
   {
-    title: 'WhoAmI',
-    id: 'whoami',
+    title: 'About',
+    id: 'about',
   },
   {
     title: 'Projects',
