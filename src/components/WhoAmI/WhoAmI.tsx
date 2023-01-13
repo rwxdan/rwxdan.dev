@@ -27,32 +27,41 @@ const WhoAmI = () => {
       }
     ));
   return (
-    <section id="whoami" className="whoami">
+    <section id="about" className="whoami">
       <animated.div ref={ref} style={springs} className="whoami-box">
         <div className="text-box">
-          <h3 className="title">WhoAmI</h3>
+          <h3 className="title">About</h3>
           <p className="text">
-            Hi there! My name is Daniel. I'm a Front-end Web Developer from
-            Venezuela. As far back as I can remember, I've always been curious
-            about how
-            <span className="italic"> things</span> work. Oftentimes I found
-            myself <span className="bold">solving</span> little puzzles for fun,{' '}
-            <span className="bold">building</span> something new, and then{' '}
-            <span className="bold">transforming </span>it. Truth to be told, I
-            do love <span className="bold">learning</span> new things!
+            My name is Daniel. I'm a Front-end Web Developer based in Venezuela.
+            I'm <span className="bold">passionate</span> about cutting-edge,
+            pixel-perfect, beautiful user interfaces and dynamic user
+            experiences.{' '}
           </p>
 
           <p className="text">
-            My Frontend skills are spread across many projects that I've built
-            by using vanilla <span className="bold">HTML</span>,{' '}
-            <span className="bold">CSS</span> and{' '}
-            <span className="bold">JavaScript</span>. Also{' '}
+            It all started when I wanted to manipulate a dashboard for a
+            self-hosted web service, adjust some colors, text, paddings, tweak
+            here and there — at that time, I didn't imagine that hacking around{' '}
+            <span className="bold">HTML</span> and{' '}
+            <span className="bold">CSS</span> could get this far. It turned out
+            to be <span className="bold">much</span> more than that!
+          </p>
+
+          <p className="text">
+            Nowadays, I don't keep <span className="italic">hacking</span>{' '}
+            around <span className="bold">HTML</span> and{' '}
+            <span className="bold">CSS</span> anymore. My focus now is to
+            develop things for the real world by using those, and of course{' '}
+            <span className="bold">JavaScript</span>,{' '}
             <span className="bold">TypeScript</span>,{' '}
             <span className="bold">React</span>,{' '}
             <span className="bold">TailwindCSS</span>,{' '}
-            <span className="bold">SCSS</span> and many other libraries that I
-            continue to learn and build with{' '}
-            <span className="bold">every day!</span>
+            <span className="bold">SCSS</span>, and many other frameworks and
+            libraries that I work with every day.{' '}
+            <a href="#projects" className="external-link">
+              {' '}
+              Let me show you what I can do with them!
+            </a>
           </p>
         </div>
         <Knowledge />
