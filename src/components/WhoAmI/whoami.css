@@ -1,7 +1,8 @@
 .whoami {
   max-width: 1356px;
-  margin-block: 3.25rem 10rem;
+  margin-block: 0 10rem;
   padding-inline: 4rem;
+  padding-block-start: 2.25rem;
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -109,6 +110,7 @@
   .whoami {
     margin-block: 3.25rem;
     padding-inline: 1.5rem;
+    padding-block-start: 0;
   }
 
   .whoami .title {
