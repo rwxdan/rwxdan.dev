@@ -33,10 +33,10 @@
   left: 0;
 }
 
-.text-box .text .external-link:hover {
+.text-box .text .external-link:is(:hover, :focus-within) {
   opacity: 0.7;
 }
 
-.text-box .text .external-link:hover::after {
+.text-box .text .external-link:is(:hover, :focus-within)::after {
   animation: underline var(--ease-out-sine) var(--ms200) forwards;
 }
