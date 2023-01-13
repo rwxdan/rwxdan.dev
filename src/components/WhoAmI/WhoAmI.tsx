@@ -34,8 +34,7 @@ const WhoAmI = () => {
           <p className="text">
             My name is Daniel. I'm a Front-end Web Developer based in Venezuela.
             I'm <span className="bold">passionate</span> about cutting-edge,
-            pixel-perfect, beautiful user interfaces and dynamic user
-            experiences.{' '}
+            pixel-perfect, responsive and dynamic user experiences.{' '}
           </p>
 
           <p className="text">
