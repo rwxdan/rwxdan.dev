@@ -7,7 +7,7 @@ const Knowledge = () => {
       <TagCloud
         className="knowledge-sphere"
         options={(w: Window & typeof globalThis): TagCloudOptions => ({
-          radius: Math.min(600, w.innerWidth, w.innerHeight) / 2,
+          radius: Math.min(480, w.innerWidth, w.innerHeight) / 2,
           maxSpeed: 'fast',
           containerClass: 'sphere',
           itemClass: 'sphere--item',
@@ -29,8 +29,6 @@ const Knowledge = () => {
           'GitHub',
           'Bash',
           'Linux',
-          'Docker',
-          'Ansible',
           'AWS',
           'HTTP',
           'DNS',
