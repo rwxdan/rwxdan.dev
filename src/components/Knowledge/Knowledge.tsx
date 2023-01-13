@@ -23,6 +23,8 @@ const Knowledge = () => {
           'TypeScript',
           'ReactJS',
           'NodeJS',
+          'Vite',
+          'Babel',
           'ES6',
           'Python',
           'Git',
