@@ -14,7 +14,7 @@
 
 .nav.blur-bg {
   backdrop-filter: blur(1rem);
-  padding-block: 0.75em;
+  padding-block: 0.5em;
   box-shadow: 0 0 0.75em var(--neutral-450);
 }
 
@@ -102,6 +102,10 @@
     box-shadow: 0 0.375em 0.5em var(--neutral-450);
   }
 
+  .nav-links {
+    font-size: var(--fs-base);
+  }
+
   .nav-menu {
     display: block;
   }
@@ -113,5 +117,9 @@
 
   .nav-links-box.expanded.fix {
     top: 3.5em;
+  }
+
+  .nav.blur-bg {
+    padding-block: 0.75em;
   }
 }
