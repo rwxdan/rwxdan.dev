@@ -84,7 +84,7 @@ export const featured: {
   info?: string;
   stack: string[];
   code?: string;
-  live: string;
+  live?: string;
   image?: string;
 }[] = [
   {
@@ -129,6 +129,12 @@ export const featured: {
     stack: ['HTML', 'SCSS', 'JavaScript', 'API'],
     code: 'https://github.com/rwxdan/advice-generator-app',
     live: 'https://rwxdan.github.io/advice-generator-app',
+  },
+  {
+    id: 'pydownloader',
+    name: 'YT PyDownloader',
+    stack: ['Python'],
+    code: 'https://github.com/rwxdan/yt-pydownloader',
   },
   {
     id: 'huddleExtended',
