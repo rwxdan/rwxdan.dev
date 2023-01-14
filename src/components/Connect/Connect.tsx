@@ -41,9 +41,10 @@ const Connect = () => {
           I'm <span className="bold">actively</span> looking for{' '}
           <span className="bold">new opportunities</span>. But even if you don't
           have a job offer for me, I'd <span className="bold">appreciate</span>{' '}
-          any <span className="bold">feedback</span> or{' '}
-          <span className="bold">recommendations</span> you can give me. Even if
-          it's just to <span className="bold">say hi!</span>
+          if you pass by just to <span className="bold">say hi!</span> Also,
+          don't hesitate in letting me know any{' '}
+          <span className="bold">feedback</span> or{' '}
+          <span className="bold">recommendations</span> you have.
         </p>
         <GetInTouch />
       </div>
