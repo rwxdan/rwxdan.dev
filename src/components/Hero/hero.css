@@ -86,7 +86,7 @@
   color: var(--neutral-700);
   max-width: 62ch;
   line-height: 1.75em;
-  margin-block-start: 1.25em;
+  margin-block-start: 1em;
 }
 
 .hero .intro .username {
@@ -99,7 +99,7 @@
 }
 
 .hero .text-box .get-in-touch {
-  margin-block-start: 1.25em;
+  transform: translateY(0.5em);
   font-size: var(--fs-base);
 }
 
