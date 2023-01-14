@@ -29,7 +29,11 @@ const MoreProjects = () => {
     <animated.ul style={box} className="more">
       {featured.slice(4).map((project) => (
         <animated.li style={item} key={project.id}>
-          <a target="_blank" href={project.live} className="card">
+          <a
+            target="_blank"
+            href={project.live || project.code}
+            className="card"
+          >
             <div className="relevant">
               <h6 className="name">{project.name}</h6>
               <div className="external-links-box">
@@ -40,13 +44,15 @@ const MoreProjects = () => {
                 >
                   <img src={GitHub} alt="GitHub repo" className="icon" />
                 </a>
-                <a
-                  target="_blank"
-                  href={project.live}
-                  className="external-link"
-                >
-                  <img src={Share} alt="Live preview" className="icon" />
-                </a>
+                {project.live && (
+                  <a
+                    target="_blank"
+                    href={project.live}
+                    className="external-link"
+                  >
+                    <img src={Share} alt="Live preview" className="icon" />
+                  </a>
+                )}
               </div>
             </div>
             <ul className="stack">
