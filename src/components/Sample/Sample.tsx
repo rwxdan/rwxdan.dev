@@ -1,6 +1,6 @@
 import { useInView, animated } from '@react-spring/web';
-import { GitHub, Share } from '../../assets/icons';
-
+import { SiGithub } from 'react-icons/si';
+import { FiShare } from 'react-icons/fi';
 interface Props {
   name: string;
   info?: string;
@@ -26,14 +26,14 @@ const Sample = (props: Props) => {
           opacity: 1,
         },
         config: {
-          tension: 280,
+          tension: 240,
           friction: 60,
         },
       }),
       {
         once: true,
         rootMargin: '0px 0px -15% 0px',
-      }
+      },
     ));
   return (
     <animated.div ref={ref} style={springs} className="sample-box">
@@ -49,20 +49,16 @@ const Sample = (props: Props) => {
         </ul>
         <div className="external-links">
           <a target="_blank" href={props.code} className="link">
-            <img src={GitHub} alt="GitHub repo" className="icon" />
+            <SiGithub />
           </a>
           <a target="_blank" href={props.live} className="link">
-            <img src={Share} alt="Live preview" className="icon" />
+            <FiShare />
           </a>
         </div>
       </div>
       <div className="image-box">
         <a target="_blank" href={props.live}>
-          <img
-            src={props.image}
-            alt="Screenshot of the project"
-            className="sample"
-          />
+          <img src={props.image} alt="Screenshot of the project" className="sample" />
         </a>
       </div>
     </animated.div>

@@ -1,7 +1,8 @@
 import { animated, useInView } from '@react-spring/web';
 import { connectLinks } from '../../constants';
-import GetInTouch from '../common/GetInTouch/GetInTouch';
+import Button from '../common/Button/Button';
 import { SiGmail, SiProtonmail, SiLinkedin, SiGithub, SiFrontendmentor, SiDiscord, SiTelegram } from 'react-icons/si';
+import { Mail } from '../../constants';
 import './connect.css';
 const Connect = () => {
   const icons = [
@@ -40,7 +41,7 @@ const Connect = () => {
   return (
     <animated.section style={springs} ref={ref} id="connect" className="connect">
       <div className="cta-box">
-        <h3 className="title">What's Next?</h3>
+        <h3 className="title">How do you do?</h3>
         <h4 className="sub-title">Let's get in touch</h4>
         <p className="text">
           I'm <span className="bold">actively</span> looking for <span className="bold">new opportunities</span>. But
@@ -48,7 +49,7 @@ const Connect = () => {
           <span className="bold">say hi!</span> Also, don't hesitate in letting me know any{' '}
           <span className="bold">feedback</span> or <span className="bold">recommendations</span> you have.
         </p>
-        <GetInTouch />
+        <Button title="Get in touch!" link={`mailto:${Mail}`} />
       </div>
       <div className="connect-links-box">
         <animated.ul style={springs} ref={ref} className="connect-links">

@@ -30,8 +30,7 @@
   white-space: nowrap;
   border-right: 3px solid var(--neutral-500);
   width: 0;
-  animation: type calc(var(--s5) + var(--ms500)) steps(67, end) forwards,
-    blink var(--ms900) step-end 3 forwards;
+  animation: type calc(var(--s5) + var(--ms500)) steps(67, end) forwards, blink var(--ms900) step-end 3 forwards;
   animation-delay: var(--ms300), var(--s3);
 }
 
@@ -98,7 +97,7 @@
   font-weight: 700;
 }
 
-.hero .text-box .get-in-touch {
+.hero .text-box .btn {
   transform: translateY(0.5em);
   font-size: var(--fs-base);
 }
@@ -228,7 +227,7 @@
     font-size: var(--fs-base);
   }
 
-  .hero .text-box .get-in-touch {
+  .hero .text-box .btn {
     margin-inline: auto;
   }
 

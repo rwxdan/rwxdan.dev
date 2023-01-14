@@ -1,5 +1,5 @@
 import { animated, useSpring } from '@react-spring/web';
-import GetInTouch from '../common/GetInTouch/GetInTouch';
+import Button from '../common/Button/Button';
 import './hero.css';
 import { Me } from '../../assets/images';
 const Hero = () => {
@@ -43,22 +43,16 @@ const Hero = () => {
         <div className="text-box">
           <p className="hello-world">Hello, World!</p>
           <animated.h1 style={firstBoot} className="title">
-            I'm <br className="break" />{' '}
-            <span className="name">Daniel Castro</span>
+            I'm <br className="break" /> <span className="name">Daniel Castro</span>
           </animated.h1>
           <animated.div style={secondBoot}>
-            <h2 className="sub-title">
-              I build things for the client-side of the Web.
-            </h2>
+            <h2 className="sub-title">I build things for the client-side of the Web.</h2>
             <p className="intro">
-              A.K.A <span className="username">rwxdan</span>. I'm a Frontend
-              advocate devoted to create Web Applications that are both
-              functional and aesthetically pleasing.{' '}
-              <span className="status">
-                I'm currently looking for new opportunities!
-              </span>
+              A.K.A <span className="username">rwxdan</span>. I'm a Frontend developer committed to create functional
+              and aesthetically pleasing Web Applications.{' '}
+              <span className="status">I'm currently looking for new opportunities!</span>
             </p>
-            <GetInTouch />
+            <Button title="See my projects" link="#projects" />
           </animated.div>
         </div>
         <animated.div style={firstBoot} className="image-box">

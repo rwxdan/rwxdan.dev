@@ -30,10 +30,10 @@
 
 .nav-links {
   display: block;
-  font-family: var(--ff-mono);
-  font-size: var(--fs-xs);
+  font-family: var(--ff-sans-title);
+  font-size: var(--fs-sm);
   letter-spacing: 0.25px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   color: inherit;
   position: relative;

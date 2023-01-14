@@ -1,8 +1,8 @@
 .connect {
   max-width: 1356px;
-  margin-block: 10rem 3.5rem;
   margin-inline: auto;
   padding-inline: 4rem;
+  margin-block: 3rem 10rem;
 }
 
 .cta-box {
@@ -14,12 +14,12 @@
 }
 
 .cta-box .title {
-  font-family: var(--ff-mono);
-  font-size: var(--fs-xxl);
-  font-weight: 700;
+  font-family: var(--ff-sans-title);
+  font-size: var(--fs-2xl);
+  font-weight: 800;
+  letter-spacing: 0.25px;
   color: var(--neutral-800);
   margin-block-end: 0.5em;
-  letter-spacing: -0.3px;
   position: relative;
   max-width: fit-content;
   margin-inline: auto;
@@ -28,7 +28,7 @@
 .cta-box .title::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
   width: 100%;
   height: 0.125em;
@@ -36,12 +36,10 @@
 }
 
 .cta-box .sub-title {
-  font-family: var(--ff-mono);
-  font-size: var(--fs-xl);
-  font-weight: 500;
-  color: var(--neutral-800);
-  opacity: 0.6;
-  letter-spacing: -0.3px;
+  font-family: var(--ff-sans-title);
+  font-size: var(--fs-xxl);
+  font-weight: 700;
+  color: var(--neutral-750);
 }
 
 .cta-box .text {
@@ -59,7 +57,7 @@
   font-weight: 700;
 }
 
-.cta-box .get-in-touch {
+.cta-box .btn {
   margin-inline: auto;
 }
 
@@ -85,7 +83,7 @@
 
 @media only screen and (max-width: 50em) {
   .connect {
-    margin-block: 3.5rem;
+    margin-block: 0 3.5rem;
     padding-inline: 1.5rem;
   }
   .cta-box .title {

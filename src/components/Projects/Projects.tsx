@@ -20,15 +20,10 @@ const Projects = () => {
       }),
       {
         once: true,
-      }
+      },
     ));
   return (
-    <animated.section
-      style={springs}
-      ref={ref}
-      id="projects"
-      className="projects"
-    >
+    <animated.section style={springs} ref={ref} id="projects" className="projects">
       <h3 className="title">Featured projects</h3>
       <h4 className="sub-title">Take a look at some of my builds</h4>
       <div className="projects-box">
