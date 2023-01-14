@@ -35,27 +35,14 @@ const Nav = () => {
     },
   });
 
-  const a_logo = useSpring({
-    from: {
-      opacity: 0,
-    },
-    to: {
-      opacity: 1,
-    },
-    config: {
-      tension: 180,
-      friction: 14,
-    },
-  });
-
   const [Open, setOpen] = useState(false);
   return (
     <nav id="nav" className={`nav ${scrollPosition && 'blur-bg'}`}>
-      <animated.div style={a_logo} className="nav-logo-box">
+      <div className="nav-logo-box">
         <a href={`${location}`} onClick={() => location.reload}>
           <img src={logo} alt="rwxdan" className="nav-logo" />
         </a>
-      </animated.div>
+      </div>
       <div>
         <img
           src={Open ? Close : Menu}
