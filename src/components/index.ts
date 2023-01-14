@@ -1,10 +1,10 @@
 export { default as LoadingEffect } from './LoadingEffect/LoadingEffect';
 export { default as Nav } from './Nav/Nav';
 export { default as Hero } from './Hero/Hero';
-export { default as AnchorLinks } from './AnchorLinks/AnchorLinks';
-export { default as AnchorMail } from './AnchorMail/AnchorMail';
-export { default as WhoAmI } from './WhoAmI/WhoAmI';
 export { default as Projects } from './Projects/Projects';
 export { default as Connect } from './Connect/Connect';
+export { default as WhoAmI } from './WhoAmI/WhoAmI';
 export { default as Footer } from './Footer/Footer';
+export { default as AnchorLinks } from './AnchorLinks/AnchorLinks';
+export { default as AnchorMail } from './AnchorMail/AnchorMail';
 export { default as AnalyticsComponent } from './Analytics/AnalyticsComponent';
