@@ -51,7 +51,7 @@ const Hero = () => {
               I build things for the client-side of the Web.
             </h2>
             <p className="intro">
-              A.K.A <span className="username">rwxdan</span>. I'm a Front-end
+              A.K.A <span className="username">rwxdan</span>. I'm a Frontend
               advocate devoted to create Web Applications that are both
               functional and aesthetically pleasing.{' '}
               <span className="status">
