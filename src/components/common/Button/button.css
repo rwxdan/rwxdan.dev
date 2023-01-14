@@ -1,12 +1,12 @@
-.get-in-touch-box .get-in-touch {
+.btn-box .btn {
   display: block;
   max-width: fit-content;
   margin-block: 1.5rem;
   text-decoration: none;
   padding: 0.625em 1.5em;
-  font-family: var(--ff-mono);
+  font-family: var(--ff-sans-title);
   font-size: var(--fs-base);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--neutral-400);
   letter-spacing: 0.25px;
   background-color: var(--primary-600);
@@ -14,7 +14,7 @@
   transition: all var(--ease-out-sine) var(--ms200);
 }
 
-.get-in-touch-box .get-in-touch:is(:focus, :active, :hover) {
+.btn-box .btn:is(:focus, :active, :hover) {
   background-color: var(--primary-570);
   box-shadow: 0 0 0.5em var(--neutral-500);
 }
