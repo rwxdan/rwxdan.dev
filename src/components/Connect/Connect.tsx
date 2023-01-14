@@ -39,12 +39,11 @@ const Connect = () => {
         <h4 className="sub-title">Let's get in touch</h4>
         <p className="text">
           I'm <span className="bold">actively</span> looking for{' '}
-          <span className="bold">new opportunities</span>. But don't worry, even
-          if you don't have a job offering for me, I'd{' '}
-          <span className="bold">appreciate</span> that you pass by to give some{' '}
-          <span className="bold">feedback</span>, any{' '}
-          <span className="bold">recommendation</span> or just to{' '}
-          <span className="bold">say hi!</span>
+          <span className="bold">new opportunities</span>. But even if you don't
+          have a job offer for me, I'd <span className="bold">appreciate</span>{' '}
+          any <span className="bold">feedback</span> or{' '}
+          <span className="bold">recommendations</span> you can give me. Even if
+          it's just to <span className="bold">say hi!</span>
         </p>
         <GetInTouch />
       </div>
