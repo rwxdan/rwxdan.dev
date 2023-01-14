@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import {
   LoadingEffect,
   Nav,
@@ -13,17 +13,14 @@ import {
   AnalyticsComponent,
 } from './components';
 const App = () => {
-  const [Loading, setLoading] = useState(false);
+  const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 4000);
+    setTimeout(() => setLoading(false), 4000);
   }, []);
 
   return (
-    <div>
+    <HelmetProvider>
       <Helmet>
         <meta charSet="UTF-8" />
         <meta name="title" content="Daniel Castro" />
@@ -46,12 +43,12 @@ const App = () => {
             <Connect />
             <AnchorLinks />
             <AnchorMail />
-            <Footer />
-            <AnalyticsComponent />
           </main>
+          <Footer />
+          <AnalyticsComponent />
         </div>
       )}
-    </div>
+    </HelmetProvider>
   );
 };
 
