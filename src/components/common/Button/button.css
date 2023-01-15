@@ -10,11 +10,15 @@
   margin-block: 1.5rem;
   padding: 0.625em 2em;
   background-color: var(--primary-600);
-  border-radius: 50em;
-  transition: all var(--ease-out-sine) var(--ms300);
+  border: 2px solid transparent;
+  border-radius: 0.5em;
+  transition: all var(--ease-out-sine) var(--ms200);
 }
 
 .btn-box .btn:is(:focus, :active, :hover) {
-  background-color: var(--primary-570);
-  box-shadow: 0 0 0.5em var(--neutral-500);
+  background-color: var(--primary-430);
+  border-color: var(--primary-600);
+  color: var(--primary-600);
+  box-shadow: var(--box-shadow-btn);
+  transform: translateY(-0.25em);
 }
