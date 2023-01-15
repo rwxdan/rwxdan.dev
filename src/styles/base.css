@@ -1,5 +1,5 @@
 :root {
-  --primary-430: hsl(14, 51%, 75%, 0.3);
+  --primary-430: hsl(16, 39%, 89%);
   --primary-450: hsl(14, 51%, 75%, 0.5);
   --primary-500: hsl(14, 51%, 75%);
   --primary-510: hsl(346, 57%, 47%, 0.3);
@@ -8,7 +8,7 @@
   --neutral-380: hsl(50, 21%, 95%, 0.8);
   --neutral-400: hsl(50, 21%, 95%);
   --neutral-410: hsl(38, 8%, 72%, 0.1);
-  --neutral-450: hsl(38, 8%, 72%, 0.7);
+  --neutral-450: hsl(40, 9%, 80%);
   --neutral-500: hsl(38, 8%, 72%);
   --neutral-700: hsl(236, 20%, 32%);
   --neutral-750: hsl(234, 5%, 58%);
@@ -67,6 +67,7 @@
   --s5: 5000ms;
 
   --body-max-w: 1356px;
+  --box-shadow-btn: 0 0.125em 0.5em var(--neutral-450);
 }
 
 body {
