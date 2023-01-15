@@ -1,17 +1,17 @@
 .btn-box .btn {
-  display: block;
-  max-width: fit-content;
-  margin-block: 1.5rem;
-  text-decoration: none;
-  padding: 0.625em 1.5em;
   font-family: var(--ff-sans-title);
   font-size: var(--fs-base);
   font-weight: 600;
-  color: var(--neutral-400);
   letter-spacing: 0.25px;
+  text-decoration: none;
+  color: var(--neutral-400);
+  max-width: fit-content;
+  display: block;
+  margin-block: 1.5rem;
+  padding: 0.625em 2em;
   background-color: var(--primary-600);
   border-radius: 50em;
-  transition: all var(--ease-out-sine) var(--ms200);
+  transition: all var(--ease-out-sine) var(--ms300);
 }
 
 .btn-box .btn:is(:focus, :active, :hover) {
