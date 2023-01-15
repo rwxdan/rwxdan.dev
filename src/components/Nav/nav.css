@@ -4,8 +4,7 @@
   align-items: center;
   padding: 1em 1.5em;
   position: fixed;
-  left: 0;
-  right: 0;
+  inset: 0 0 auto;
   overflow: hidden;
   z-index: 50;
   background-color: var(--neutral-380);
@@ -13,7 +12,7 @@
 }
 
 .nav.blur-bg {
-  backdrop-filter: blur(1rem);
+  backdrop-filter: blur(15px);
   padding-block: 0.5em;
   box-shadow: 0 0 0.75em var(--neutral-450);
 }
@@ -29,13 +28,13 @@
 }
 
 .nav-links {
-  display: block;
   font-family: var(--ff-sans-title);
+  font-weight: 600;
   font-size: var(--fs-sm);
   letter-spacing: 0.25px;
-  font-weight: 600;
   text-decoration: none;
-  color: inherit;
+  display: block;
+  color: var(--neutral-800);
   position: relative;
 }
 
@@ -52,8 +51,8 @@
   transition: all var(--ease-out-quad) var(--ms200);
 }
 
-.nav-links:not(.resume):hover {
-  opacity: 0.8;
+.nav-links:not(.resume):is(:focus, :active, :hover) {
+  color: var(--neutral-700);
 }
 
 .nav-links:not(.resume):is(:focus, :active, :hover)::after {
@@ -61,21 +60,20 @@
 }
 
 .nav-links.resume {
-  background-color: var(--primary-600);
   color: var(--neutral-400);
-  padding: 0.625em 1.75em;
+  background-color: var(--primary-600);
+  padding: 0.625em 2em;
   border-radius: 50em;
-  transition: all var(--ease-out-sine) var(--ms200);
+  transition: all var(--ease-out-sine) var(--ms300);
 }
 
 .nav-links.resume:is(:focus, :active, :hover) {
-  opacity: 0.7;
+  background-color: var(--primary-570);
   box-shadow: 0 0 0.5em var(--neutral-500);
 }
 
 .nav-menu {
   display: none;
-  height: 2rem;
 }
 
 @media only screen and (max-width: 50em) {
@@ -87,27 +85,27 @@
   .nav-logo {
     height: 1.5rem;
   }
+
+  .nav-menu {
+    display: block;
+    height: 2rem;
+  }
+
   .nav-links-box {
     display: none;
     gap: 2rem;
     position: fixed;
-    top: 5em;
-    left: 0;
-    right: 0;
+    inset: 5em 0 auto 0;
     padding-block: 2em;
     background-color: var(--neutral-400);
     animation: menu var(--ease-out-sine) var(--ms200);
-    z-index: 50;
     transition: all var(--ease-out-sine) var(--ms200);
     box-shadow: 0 0.375em 0.5em var(--neutral-450);
+    z-index: 50;
   }
 
   .nav-links {
     font-size: var(--fs-base);
-  }
-
-  .nav-menu {
-    display: block;
   }
 
   .nav-links-box.expanded {
