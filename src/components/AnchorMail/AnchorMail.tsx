@@ -18,7 +18,7 @@ const AnchorMail = () => {
   });
   return (
     <animated.aside style={springs} className="anchor-mail">
-      <a href={`mailto:${Mail}`} className="mail">
+      <a href={`mailto:${Mail}`} className="mail" title={Mail}>
         {Mail}
       </a>
       <div className="decoration"></div>
