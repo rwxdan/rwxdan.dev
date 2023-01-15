@@ -94,7 +94,7 @@
 }
 
 .hero .text-box .btn {
-  transform: translateY(0.5em);
+  margin-block: 2em;
   font-size: var(--fs-base);
 }
 
