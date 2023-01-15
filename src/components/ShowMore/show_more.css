@@ -70,7 +70,7 @@
 
 .more .card:is(:focus-within, :active, :hover) {
   transform: translateY(-0.125em);
-  box-shadow: 0 0.125em 0.375em var(--neutral-450);
+  box-shadow: 0 0.125em 0.375em var(--primary-450);
   border-color: var(--primary-500);
 }
 
