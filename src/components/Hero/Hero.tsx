@@ -52,7 +52,7 @@ const Hero = () => {
               and aesthetically pleasing Web Applications.{' '}
               <span className="status">I'm currently looking for new opportunities!</span>
             </p>
-            <Button title="See my projects" link="#projects" />
+            <Button title="See My Projects" link="#projects" />
           </animated.div>
         </div>
         <animated.div style={firstBoot} className="image-box">

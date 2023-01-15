@@ -49,7 +49,7 @@ const Connect = () => {
           <span className="bold">say hi!</span> Also, don't hesitate in letting me know any{' '}
           <span className="bold">feedback</span> or <span className="bold">recommendations</span> you have.
         </p>
-        <Button title="Get in touch!" link={`mailto:${Mail}`} />
+        <Button title="Get In Touch!" link={`mailto:${Mail}`} />
       </div>
       <div className="connect-links-box">
         <animated.ul style={springs} ref={ref} className="connect-links">
