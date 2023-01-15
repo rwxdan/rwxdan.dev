@@ -62,7 +62,9 @@ const Hero = () => {
               <img src={Me} alt="Daniel Castro" className="profile" />
             </div>
             <div className="tag-box">
-              <p className="tag">It's me, rwxdan!</p>
+              <p className="tag">
+                It's me, rwxdan! <span className="wave">👋</span>{' '}
+              </p>
             </div>
           </div>
         </animated.div>
