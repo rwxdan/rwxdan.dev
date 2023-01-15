@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   max-width: var(--body-max-w);
   margin: 0 auto;
   display: flex;
