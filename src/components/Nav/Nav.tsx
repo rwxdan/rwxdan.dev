@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { animated, useSpring } from '@react-spring/web';
 import './nav.css';
-import logo from '../../static/logo.svg';
-import { Menu, Close } from '../../static/icons';
+import logo from '../../../static/logo.svg';
+import { Menu, Close } from '../../../static/icons';
 import { navLinks } from '../../constants';
 const Nav = () => {
   const [scrollPosition, setScrollPosition] = useState(0);

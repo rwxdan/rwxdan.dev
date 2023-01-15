@@ -1,4 +1,4 @@
-import { Blogr, Hoobank, Manage, TipCalculator } from '../static/images';
+import { Blogr, Hoobank, Manage, TipCalculator } from '../../static/images';
 
 export const navLinks: {
   title: string;

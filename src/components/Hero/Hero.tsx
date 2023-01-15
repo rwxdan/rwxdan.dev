@@ -1,7 +1,7 @@
 import { animated, useSpring } from '@react-spring/web';
 import Button from '../common/Button/Button';
 import './hero.css';
-import { Me } from '../../static/images';
+import { Me } from '../../../static/images';
 const Hero = () => {
   const isMobile = window.innerWidth < 800;
   let firstBoot;
