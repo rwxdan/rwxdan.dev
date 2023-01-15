@@ -7,8 +7,8 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
-  animation: acme var(--ease-in-out-cubic) var(--ms500) both;
-  animation-delay: calc(var(--s3) + var(--ms500));
+  animation: roll-up var(--ease-in-out-cubic) var(--ms500) both;
+  animation-delay: calc(var(--s2) + var(--ms500));
   box-shadow: 0 1rem 3.25rem var(--neutral-450);
 }
 
@@ -25,7 +25,7 @@
 .acme .icon {
   width: clamp(4.6875rem, 10vw, 7.5rem);
   transform: scale(0);
-  animation: scale var(--ease-in-out-quad) var(--s1) forwards;
+  animation: scale var(--ease-in-out-quad) var(--ms800) forwards;
   animation-delay: var(--ms300);
 }
 
@@ -34,8 +34,8 @@
   height: 4px;
   border-radius: 50em;
   background-color: var(--primary-600);
-  animation: underline var(--ease-in-out-quad) var(--s2) both;
-  animation-delay: calc(var(--s1) + var(--ms300));
+  animation: underline var(--ease-in-out-quad) calc(var(--s1) + var(--ms300)) both;
+  animation-delay: calc(var(--s1) + var(--ms100));
   transform-origin: right;
   position: absolute;
   bottom: 0;
