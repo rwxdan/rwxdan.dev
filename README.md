@@ -8,7 +8,7 @@
   The first version of <a href="https://rwxdan.dev/">rwxdan.dev</a>, my portfolio. Built with <a href="https://vitejs.dev/">Vite</a> and Deployed by <a href="https://vercel.com/">Vercel</a>
 </p>
 <div align="center">
-    <img src="https://skillicons.dev/icons?i=vite,nodejs,react,typescript,css,vscode" />
+    <img height="44" src="https://skillicons.dev/icons?i=vercel,vite,nodejs,react,typescript,css,vscode" />
 </div>
 
 | ![](./public/screenshots/phone_view.png) | ![](./public/screenshots/tablet_view.png) | ![](./public/screenshots/desktop_view.png) |
@@ -21,6 +21,8 @@
 - [React](https://reactjs.org/)
 - [TypeScript](https://typescriptlang.org/)
 - [react-spring](https://react-spring.dev/)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [react-helmet](https://www.npmjs.com/package/react-helmet)
 - [@frank-mayer/react-tag-cloud](https://github.com/Frank-Mayer/react-tag-cloud)
 - [PostCSS](https://postcss.org/)
 - [Autoprefixer](https://autoprefixer.github.io/)
