@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { animated, useSpring } from '@react-spring/web';
 import './nav.css';
-import logo from '/src/assets/logo.svg';
-import { Menu, Close } from '../../assets/icons';
+import logo from '../../static/logo.svg';
+import { Menu, Close } from '../../static/icons';
 import { navLinks } from '../../constants';
 const Nav = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -44,34 +44,15 @@ const Nav = () => {
         </a>
       </div>
       <div>
-        <img
-          src={Open ? Close : Menu}
-          alt="Menu"
-          className="nav-menu"
-          onClick={() => setOpen((prev) => !prev)}
-        />
+        <img src={Open ? Close : Menu} alt="Menu" className="nav-menu" onClick={() => setOpen((prev) => !prev)} />
         <animated.div style={a_links}>
-          <ul
-            className={`nav-links-box ${Open && 'expanded'} ${
-              scrollPosition && 'fix'
-            }`}
-          >
+          <ul className={`nav-links-box ${Open && 'expanded'} ${scrollPosition && 'fix'}`}>
             {navLinks.map((item, index) => (
               <li key={item.id}>
                 <a
-                  target={`${
-                    index === navLinks.length - 1 ? '_blank' : '_self'
-                  }`}
-                  href={`${
-                    index === navLinks.length - 1
-                      ? '/resume.pdf'
-                      : `#${item.id}`
-                  }`}
-                  className={` ${
-                    index === navLinks.length - 1
-                      ? 'nav-links resume'
-                      : 'nav-links'
-                  }  `}
+                  target={`${index === navLinks.length - 1 ? '_blank' : '_self'}`}
+                  href={`${index === navLinks.length - 1 ? '/resume.pdf' : `#${item.id}`}`}
+                  className={` ${index === navLinks.length - 1 ? 'nav-links resume' : 'nav-links'}  `}
                 >
                   {item.title}
                 </a>
