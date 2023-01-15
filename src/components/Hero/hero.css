@@ -1,8 +1,8 @@
 .hero {
-  min-height: 100vh;
-  max-width: 1356px;
+  height: 100vh;
+  max-width: var(--body-max-w);
+  margin: 0 auto;
   display: flex;
-  margin-inline: auto;
   padding: 15rem 4rem;
 }
 
@@ -14,33 +14,34 @@
 .hero .text-box {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .hero .hello-world {
   font-size: var(--fs-lg);
   font-family: var(--ff-mono);
+  font-weight: 700;
   letter-spacing: 0.1px;
-  color: var(--primary-600);
-  font-weight: 500;
-  opacity: 0.7;
-  margin-block-end: 0.5em;
+  color: var(--neutral-750);
   max-width: fit-content;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid var(--neutral-500);
+  border-right: 2px solid var(--primary-570);
   width: 0;
-  animation: type calc(var(--s5) + var(--ms500)) steps(67, end) forwards, blink var(--ms900) step-end 3 forwards;
+  animation: type calc(var(--s5) + var(--ms500)) steps(67, jump-end) forwards,
+    blink var(--ms900) steps(1, jump-end) 3 forwards;
   animation-delay: var(--ms300), var(--s3);
 }
 
 .hero .title {
   font-size: var(--fs-6xl);
   font-family: var(--ff-sans-title);
-  letter-spacing: 0.2px;
   font-weight: 900;
   color: var(--neutral-800);
-  margin-block-end: 0.25em;
+  letter-spacing: 0.25px;
+  margin-block: 0.25em;
+  line-height: 1;
 }
 
 .hero .title .name {
@@ -53,20 +54,10 @@
   width: 0;
   height: 0.125em;
   background-color: var(--primary-600);
-  bottom: -4px;
   left: 0;
+  bottom: 0;
   animation: underline var(--ms350) var(--ease-in-out-quad) both;
   animation-delay: calc(var(--s2) + var(--ms600));
-}
-
-.hero .title .break {
-  display: none;
-}
-
-@media only screen and (max-width: 1100px) {
-  .hero .title .break {
-    display: block;
-  }
 }
 
 .hero .sub-title {
@@ -75,7 +66,7 @@
   letter-spacing: 0.2px;
   font-weight: 800;
   color: var(--neutral-750);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .hero .intro {
@@ -83,9 +74,9 @@
   font-family: var(--ff-sans-body);
   font-weight: 400;
   color: var(--neutral-700);
-  max-width: 62ch;
   line-height: 1.75em;
-  margin-block-start: 1em;
+  max-width: 52ch;
+  margin-block-start: 1.25em;
 }
 
 .hero .intro .username {
@@ -94,7 +85,12 @@
 
 .hero .intro .username,
 .hero .intro .status {
-  font-weight: 700;
+  font-weight: 500;
+  color: var(--neutral-800);
+}
+
+.hero .intro .status {
+  display: block;
 }
 
 .hero .text-box .btn {
@@ -133,12 +129,8 @@
   transition: transform var(--ease-in-out-cubic) var(--ms300);
 }
 
-.hero .image-wrapper:hover {
-  transform: scale(1.02);
-}
-
 .hero .image-wrapper:hover .profile {
-  transform: scale(1.05) translateY(-1.125rem);
+  transform: scale(1.03) translateY(-1.125rem);
 }
 
 .hero .wrapper {
@@ -148,20 +140,29 @@
 
 .hero .wrapper .tag-box {
   position: absolute;
-  top: -1.5rem;
-  right: -1.5rem;
+  top: -1.125rem;
+  right: -2.5rem;
   background-color: var(--neutral-800);
-  padding: 0.5em 0.75em;
   border-radius: 0.25em;
-  z-index: 20;
-  opacity: 0;
+  padding: 0.5em 0.75em;
   transition: all var(--ease-in-out-cubic) var(--ms300);
+  z-index: 20;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .hero .wrapper .tag {
   font-size: calc(var(--fs-xs) - 0.0625rem);
   font-family: var(--ff-mono);
+  font-weight: 500;
+  letter-spacing: 0.25px;
   color: var(--neutral-400);
+}
+
+.hero .wrapper .tag .wave {
+  animation: wave var(--s2) infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
 
 .hero .wrapper .tag::after {
@@ -176,8 +177,21 @@
 }
 
 .hero .wrapper:is(:focus, :active, :hover) .tag-box {
+  visibility: visible;
   opacity: 1;
   transform: translateY(-0.75rem);
+}
+
+.hero .wrapper:is(:focus, :active, :hover) .wave {
+  animation: wave var(--s2) infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 1100px) {
+  .hero .title .break {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 50em) {
@@ -205,6 +219,7 @@
 
   .hero .text-box {
     text-align: center;
+    align-items: center;
   }
 
   .hero .hello-world {
@@ -215,7 +230,7 @@
   }
 
   .hero .title {
-    margin-block-end: 1rem;
+    margin-block: 1rem;
   }
 
   .hero .title .name::after {
@@ -249,7 +264,7 @@
   }
 
   .hero .wrapper .tag-box {
-    right: -3.5rem;
+    right: -4.5rem;
     top: -1rem;
   }
   .hero .wrapper .tag {
