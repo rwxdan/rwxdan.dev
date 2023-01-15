@@ -5,7 +5,7 @@
 }
 
 .projects .title {
-  font-size: var(--fs-xxl);
+  font-size: var(--fs-2xl);
   font-family: var(--ff-sans-title);
   font-weight: 800;
   letter-spacing: 0.25px;
@@ -111,12 +111,12 @@
   margin-inline: auto;
   max-width: 85%;
   opacity: 0.8;
-  filter: saturate(10%) drop-shadow(0.25em 0.5em 0.75em var(--primary-510));
+  filter: saturate(10%) drop-shadow(0.5em 0.5em 0.25em var(--primary-450));
   transition: all var(--ease-in-out-quad) var(--ms300);
 }
 
 .sample-box:nth-child(even) .image-box .sample {
-  filter: saturate(10%) drop-shadow(-0.25em 0.5em 0.75em var(--primary-510));
+  filter: saturate(10%) drop-shadow(-0.5em 0.5em 0.25em var(--primary-450));
 }
 
 .sample-box .image-box .sample:hover {
