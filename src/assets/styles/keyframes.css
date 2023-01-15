@@ -42,14 +42,14 @@
     transform: scale(0);
   }
   50% {
-    transform: scale(1.15);
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
   }
 }
 
-@keyframes acme {
+@keyframes roll-up {
   from {
     transform: translateY(0);
   }
