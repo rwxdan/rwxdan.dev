@@ -18,8 +18,7 @@
 .anchor-links .links-box .link {
   display: block;
   text-decoration: none;
-  color: var(--primary-600);
-  opacity: 0.7;
+  color: var(--primary-570);
   transition: all var(--ease-out-sine) var(--ms200);
   font-size: 1.75rem;
 }
@@ -31,7 +30,7 @@
 }
 
 .anchor-links .links-box .link:is(:focus, :active, :hover) {
-  opacity: 1;
+  color: var(--primary-600);
   transform: translateY(-0.125em);
 }
 

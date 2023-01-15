@@ -12,16 +12,15 @@
 .anchor-mail .mail {
   transform: rotate(90deg);
   text-decoration: none;
-  color: var(--primary-600);
+  color: var(--primary-570);
   font-family: var(--ff-mono);
   font-size: var(--fs-sm);
   font-weight: 700;
-  opacity: 0.7;
-  transition: opacity var(--ease-out-sine) var(--ms200);
+  transition: all var(--ease-out-sine) var(--ms200);
 }
 
 .anchor-mail .mail:is(:hover, :focus-visible) {
-  opacity: 1;
+  color: var(--primary-600);
 }
 
 .anchor-mail .decoration {
