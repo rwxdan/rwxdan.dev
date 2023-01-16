@@ -16,27 +16,13 @@
 }
 
 .text-box .text .external-link {
-  color: var(--primary-600);
+  color: var(--primary-570);
   font-weight: 500;
   text-decoration: none;
   transition: all var(--ease-out-sine) var(--ms200);
   position: relative;
 }
 
-.text-box .text .external-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0.075em;
-  background-color: var(--primary-600);
-  bottom: 0;
-  left: 0;
-}
-
 .text-box .text .external-link:is(:hover, :focus-within) {
-  opacity: 0.7;
-}
-
-.text-box .text .external-link:is(:hover, :focus-within)::after {
-  animation: underline var(--ease-out-sine) var(--ms200) forwards;
+  color: var(--primary-600);
 }
