@@ -2,7 +2,7 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "@static": ["./static"]
+      "@static/*": ["./static/*"]
     },
     "target": "ES6",
     "useDefineForClassFields": true,
