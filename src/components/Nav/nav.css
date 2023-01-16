@@ -64,7 +64,7 @@
   background-color: var(--primary-600);
   border: 2px solid transparent;
   padding: 0.625em 2em;
-  border-radius: 0.5em;
+  border-radius: 0.375em;
   transition: all var(--ease-out-sine) var(--ms200);
 }
 
