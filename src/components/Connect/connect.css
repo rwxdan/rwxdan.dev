@@ -2,11 +2,11 @@
   max-width: 1356px;
   margin-inline: auto;
   padding-inline: 4rem;
-  margin-block: 3rem 10rem;
+  padding-block: 4rem 10rem;
 }
 
 .cta-box {
-  margin-block: 2.5rem;
+  margin-bottom: 2.5rem;
   margin-inline: auto;
   text-align: center;
   max-width: fit-content;
@@ -46,7 +46,7 @@
   font-family: var(--ff-sans-body);
   font-size: var(--fs-base);
   font-weight: 400;
-  color: var(--neutral-800);
+  color: var(--neutral-700);
   max-width: 55ch;
   line-height: 1.75rem;
   margin-inline: auto;
@@ -54,7 +54,8 @@
 }
 
 .cta-box .text .bold {
-  font-weight: 700;
+  font-weight: 500;
+  color: var(--neutral-800);
 }
 
 .cta-box .btn {
