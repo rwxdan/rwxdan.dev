@@ -23,7 +23,7 @@ const WhoAmI = () => {
       }),
       {
         once: true,
-        rootMargin: '0px 0px -25% 0px',
+        rootMargin: '0px 0px -15% 0px',
       },
     ));
   return (
