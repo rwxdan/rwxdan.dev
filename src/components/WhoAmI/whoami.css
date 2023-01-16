@@ -2,7 +2,7 @@
   max-width: 1356px;
   margin-block-end: 3rem;
   padding-inline: 4rem;
-  padding-block-start: 2.25rem;
+  padding-block-start: 5rem;
   margin-inline: auto;
   display: flex;
   align-items: center;
@@ -51,7 +51,8 @@
 }
 
 .whoami .text .bold {
-  font-weight: 700;
+  font-weight: 500;
+  color: var(--neutral-800);
 }
 
 .whoami .text .italic {
@@ -59,8 +60,9 @@
 }
 
 .whoami .text .mono {
-  font-weight: 700;
+  font-weight: 500;
   font-family: var(--ff-mono);
+  color: var(--neutral-800);
 }
 
 @media only screen and (max-width: 1030px) {
