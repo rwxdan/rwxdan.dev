@@ -39,8 +39,8 @@ const Connect = () => {
       },
     ));
   return (
-    <animated.section style={springs} ref={ref} id="connect" className="connect">
-      <div className="cta-box">
+    <section ref={ref} id="connect" className="connect">
+      <animated.div style={springs} className="cta-box">
         <h3 className="title">How do you do?</h3>
         <h4 className="sub-title">Let's get in touch</h4>
         <p className="text">
@@ -50,9 +50,9 @@ const Connect = () => {
           <span className="bold">feedback</span> or <span className="bold">recommendations</span> you have.
         </p>
         <Button title="Get In Touch!" link={`mailto:${Mail}`} />
-      </div>
-      <div className="connect-links-box">
-        <animated.ul style={springs} ref={ref} className="connect-links">
+      </animated.div>
+      <animated.div style={springs} className="connect-links-box">
+        <ul ref={ref} className="connect-links">
           {connectLinks.map((item, index) => (
             <li key={item.id}>
               <a target="_blank" href={item.link} className="link">
@@ -60,9 +60,9 @@ const Connect = () => {
               </a>
             </li>
           ))}
-        </animated.ul>
-      </div>
-    </animated.section>
+        </ul>
+      </animated.div>
+    </section>
   );
 };
 
