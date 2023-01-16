@@ -92,15 +92,14 @@
 }
 
 .text-box .external-links .link {
-  opacity: 0.7;
   transition: all var(--ease-out-sine) var(--ms200);
   font-size: 1.5rem;
-  color: var(--primary-600);
+  color: var(--primary-570);
 }
 
 .text-box .external-links .link:is(:focus, :active, :hover) {
   transform: translateY(-0.125em);
-  opacity: 1;
+  color: var(--primary-600);
 }
 
 .sample-box .image-box {
