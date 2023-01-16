@@ -1,8 +1,8 @@
 import { animated, useInView } from '@react-spring/web';
-import { connectLinks } from '../../constants';
-import Button from '../common/Button/Button';
+import { connectLinks } from '@/constants';
+import { Button } from '@/components';
 import { SiGmail, SiProtonmail, SiLinkedin, SiGithub, SiFrontendmentor, SiDiscord, SiTelegram } from 'react-icons/si';
-import { Mail } from '../../constants';
+import { Mail } from '@/constants';
 import './connect.css';
 const Connect = () => {
   const icons = [

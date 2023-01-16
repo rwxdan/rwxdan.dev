@@ -11,7 +11,7 @@ import {
   Connect,
   Footer,
   AnalyticsComponent,
-} from './components';
+} from '@/components';
 const App = () => {
   const [Loading, setLoading] = useState(true);
 

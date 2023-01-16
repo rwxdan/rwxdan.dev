@@ -1,5 +1,4 @@
 import './button.css';
-import { Mail } from '../../../constants';
 
 interface Props {
   title: string;

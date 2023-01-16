@@ -1,5 +1,5 @@
 import { animated, useSpring } from '@react-spring/web';
-import { featured } from '../../constants';
+import { featured } from '@/constants';
 import { SiGithub } from 'react-icons/si';
 import { FiShare } from 'react-icons/fi';
 import { BsFillBookmarkStarFill } from 'react-icons/bs';

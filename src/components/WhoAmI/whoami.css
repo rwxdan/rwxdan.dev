@@ -84,9 +84,9 @@
 
 @media only screen and (max-width: 50em) {
   .whoami {
-    margin-block-start: 6rem;
+    margin-block-start: 0;
     padding-inline: 1.5rem;
-    padding-block-start: 0;
+    padding-block-start: 1.5rem;
   }
 
   .whoami .title {

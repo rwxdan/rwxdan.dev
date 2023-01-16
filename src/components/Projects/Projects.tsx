@@ -1,7 +1,6 @@
 import { animated, useInView } from '@react-spring/web';
-import Sample from '../Sample/Sample';
-import ShowMore from '../ShowMore/ShowMore';
-import { featured } from '../../constants';
+import { Sample, ShowMore } from '@/components';
+import { featured } from '@/constants';
 import './projects.css';
 
 const Projects = () => {

@@ -144,7 +144,7 @@
 
   .projects-box {
     gap: 3.5rem;
-    margin-block-start: -0.5rem;
+    margin-block-start: 4rem;
   }
 
   .projects-box .sample-box {

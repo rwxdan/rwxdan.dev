@@ -1,5 +1,5 @@
 import { useInView, animated } from '@react-spring/web';
-import Knowledge from '../Knowledge/Knowledge';
+import { Knowledge } from '@/components';
 import './whoami.css';
 const WhoAmI = () => {
   const isMobile = window.innerWidth < 475;
