@@ -20,7 +20,7 @@ const Connect = () => {
     ([ref, springs] = useInView(
       () => ({
         from: {
-          y: 100,
+          y: 50,
           opacity: 0,
         },
         to: {
@@ -28,8 +28,7 @@ const Connect = () => {
           opacity: 1,
         },
         config: {
-          tension: 210,
-          friction: 40,
+          duration: 500,
         },
       }),
       {

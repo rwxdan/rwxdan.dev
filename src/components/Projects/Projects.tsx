@@ -2,6 +2,7 @@ import { animated, useInView } from '@react-spring/web';
 import { Sample, ShowMore } from '@/components';
 import { featured } from '@/shared';
 import './projects.css';
+import { config } from 'process';
 
 const Projects = () => {
   const isMobile = window.innerWidth < 475;
@@ -15,6 +16,9 @@ const Projects = () => {
         },
         to: {
           opacity: 1,
+        },
+        config: {
+          duration: 500,
         },
       }),
       {

@@ -9,7 +9,7 @@ const WhoAmI = () => {
     ([ref, springs] = useInView(
       () => ({
         from: {
-          y: 100,
+          y: 50,
           opacity: 0,
         },
         to: {
@@ -17,13 +17,12 @@ const WhoAmI = () => {
           opacity: 1,
         },
         config: {
-          tension: 280,
-          friction: 60,
+          duration: 500,
         },
       }),
       {
         once: true,
-        rootMargin: '0px 0px -15% 0px',
+        rootMargin: '0px 0px -30% 0px',
       },
     ));
   return (

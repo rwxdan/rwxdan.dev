@@ -18,7 +18,7 @@ const Sample = (props: Props) => {
     ([ref, springs] = useInView(
       () => ({
         from: {
-          y: 100,
+          y: 50,
           opacity: 0,
         },
         to: {
@@ -26,13 +26,12 @@ const Sample = (props: Props) => {
           opacity: 1,
         },
         config: {
-          tension: 240,
-          friction: 60,
+          duration: 300,
         },
       }),
       {
         once: true,
-        rootMargin: '0px 0px -15% 0px',
+        rootMargin: '0px 0px -20% 0px',
       },
     ));
   return (
