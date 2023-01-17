@@ -10,14 +10,14 @@
 .footer .text-box .text {
   font-family: var(--ff-sans-body);
   font-size: var(--fs-xs);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--neutral-800);
   text-align: center;
 }
 
 .text-box .text .external-link {
-  color: var(--primary-570);
-  font-weight: 500;
+  color: var(--neutral-800);
+  font-weight: 700;
   text-decoration: none;
   transition: all var(--ease-out-sine) var(--ms200);
   position: relative;
