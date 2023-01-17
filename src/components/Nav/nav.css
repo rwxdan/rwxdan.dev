@@ -100,7 +100,7 @@
     background-color: var(--neutral-400);
     animation: menu var(--ease-out-sine) var(--ms200);
     transition: all var(--ease-out-sine) var(--ms200);
-    box-shadow: 0 0.375em 0.5em var(--neutral-450);
+    box-shadow: 0 100vh 0 100vh var(--neutral-670);
     z-index: 50;
   }
 
