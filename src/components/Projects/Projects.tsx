@@ -2,10 +2,10 @@ import { animated, useInView } from '@react-spring/web';
 import { Sample, ShowMore } from '@/components';
 import { featured } from '@/shared';
 import './projects.css';
-import { config } from 'process';
 
 const Projects = () => {
   const isMobile = window.innerWidth < 475;
+
   let ref;
   let springs;
   !isMobile &&
