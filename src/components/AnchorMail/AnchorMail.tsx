@@ -1,5 +1,5 @@
 import { animated, useSpring } from '@react-spring/web';
-import { Mail } from '../../constants';
+import { Mail } from '@/shared';
 import './anchor_mail.css';
 const AnchorMail = () => {
   const springs = useSpring({
@@ -18,8 +18,8 @@ const AnchorMail = () => {
   });
   return (
     <animated.aside style={springs} className="anchor-mail">
-      <a href={`mailto:${Mail}`} className="mail" title={Mail}>
-        {Mail}
+      <a href={`mailto:${Mail}`} className="mail" title={`${Mail}`}>
+        {`${Mail}`}
       </a>
       <div className="decoration"></div>
     </animated.aside>
