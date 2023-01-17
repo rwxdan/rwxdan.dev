@@ -1,5 +1,5 @@
 import { animated, useSpring } from '@react-spring/web';
-import { Gh, In } from '../../constants';
+import { Gh, In } from '@/shared';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './anchor_links.css';
 const AnchorLinks = () => {
@@ -20,10 +20,10 @@ const AnchorLinks = () => {
   return (
     <animated.aside style={springs} className="anchor-links">
       <div className="links-box">
-        <a href={Gh} target="_blank" className="link">
+        <a href={`${Gh}`} target="_blank" className="link">
           <FaGithub />
         </a>
-        <a href={In} target="_blank" className="link">
+        <a href={`${In}`} target="_blank" className="link">
           <FaLinkedin />
         </a>
       </div>
