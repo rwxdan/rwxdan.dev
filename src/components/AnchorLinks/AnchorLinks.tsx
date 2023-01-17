@@ -3,22 +3,20 @@ import { Gh, In } from '@/shared';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import './anchor_links.css';
 const AnchorLinks = () => {
-  const springs = useSpring({
+  const spring = useSpring({
     from: {
-      y: 100,
       opacity: 0,
     },
     to: {
-      y: 0,
       opacity: 1,
     },
+    delay: 3000,
     config: {
-      tension: 170,
-      friction: 14,
+      duration: 300,
     },
   });
   return (
-    <animated.aside style={springs} className="anchor-links">
+    <animated.aside style={spring} className="anchor-links">
       <div className="links-box">
         <a href={`${Gh}`} target="_blank" className="link">
           <FaGithub />

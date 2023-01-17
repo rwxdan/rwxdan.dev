@@ -2,22 +2,21 @@ import { animated, useSpring } from '@react-spring/web';
 import { Mail } from '@/shared';
 import './anchor_mail.css';
 const AnchorMail = () => {
-  const springs = useSpring({
+  const spring = useSpring({
     from: {
-      y: 100,
       opacity: 0,
     },
     to: {
-      y: 0,
       opacity: 1,
     },
+    delay: 3000,
+
     config: {
-      tension: 170,
-      friction: 14,
+      duration: 300,
     },
   });
   return (
-    <animated.aside style={springs} className="anchor-mail">
+    <animated.aside style={spring} className="anchor-mail">
       <a href={`mailto:${Mail}`} className="mail" title={`${Mail}`}>
         {`${Mail}`}
       </a>
