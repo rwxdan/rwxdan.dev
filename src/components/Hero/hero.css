@@ -272,7 +272,6 @@
     font-size: 0.75rem;
   }
 
-  .hero .image-wrapper:hover,
   .hero .image-wrapper:hover .profile {
     transform: rotate(-10.5deg);
   }
