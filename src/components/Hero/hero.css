@@ -127,10 +127,11 @@
   z-index: 10;
   top: -0.5rem;
   transition: transform var(--ease-in-out-cubic) var(--ms300);
+  transform: rotate(-10.5deg);
 }
 
 .hero .image-wrapper:hover .profile {
-  transform: scale(1.03) translateY(-1.125rem);
+  transform: scale(1.03) translateY(-1.125rem) rotate(-10.5deg);
 }
 
 .hero .wrapper {
