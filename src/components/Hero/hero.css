@@ -79,18 +79,9 @@
   margin-block-start: 1.25em;
 }
 
-.hero .intro .username {
-  font-family: var(--ff-mono);
-}
-
-.hero .intro .username,
 .hero .intro .status {
   font-weight: 500;
   color: var(--neutral-800);
-}
-
-.hero .intro .status {
-  display: block;
 }
 
 .hero .text-box .btn {

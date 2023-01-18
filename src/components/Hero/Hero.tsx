@@ -48,8 +48,7 @@ const Hero = () => {
           <animated.div style={secondBoot}>
             <h2 className="sub-title">I build things for the client-side of the Web.</h2>
             <p className="intro">
-              A.K.A <span className="username">rwxdan</span>. I'm a Frontend developer committed to create functional
-              and aesthetically pleasing Web Applications.{' '}
+              I'm a Frontend developer committed to create functional and aesthetically pleasing Web Applications.{' '}
               <span className="status">I'm currently looking for new opportunities!</span>
             </p>
             <Button title="See My Projects" link="#projects" />
