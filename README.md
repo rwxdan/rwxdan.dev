@@ -11,9 +11,6 @@
     <img height="44" src="https://skillicons.dev/icons?i=vercel,vite,nodejs,react,typescript,css,vscode" />
 </div>
 
-| ![](./public/screenshots/phone_view.png) | ![](./public/screenshots/tablet_view.png) | ![](./public/screenshots/desktop_view.png) |
-| ---------------------------------------- | ----------------------------------------- | ------------------------------------------ |
-
 ## Tools used 🧰
 
 - [NodeJS](https://nodejs.org/)
