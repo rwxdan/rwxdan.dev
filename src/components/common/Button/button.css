@@ -14,7 +14,7 @@
   transition: all var(--ease-out-sine) var(--ms200);
 }
 
-.btn-box .btn:is(:focus, :active, :hover) {
+.btn-box .btn:is(:hover, :active, :focus) {
   background-color: var(--primary-570);
   box-shadow: var(--box-shadow-btn);
 }

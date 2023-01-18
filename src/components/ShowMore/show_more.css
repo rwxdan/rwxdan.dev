@@ -68,13 +68,13 @@
   overflow: hidden;
 }
 
-.more .card:is(:focus-within, :active, :hover) {
+.more .card:is(:hover, :active, .card:is(:hover, :active, :focus-within)) {
   transform: translateY(-0.125em);
   box-shadow: 0 0.125em 0.375em var(--primary-450);
   border-color: var(--primary-500);
 }
 
-.more .card:is(:focus-within, :active, :hover) .relevant .name {
+.more .card:is(:hover, :active, :focus-within) .relevant .name {
   color: var(--primary-600);
 }
 
@@ -111,7 +111,7 @@
   transition: all var(--ease-out-sine) var(--ms200);
 }
 
-.relevant .external-link:is(:focus, :active, :hover) {
+.relevant .external-link:is(:hover, :active, :focus) {
   color: var(--primary-600);
   transform: translateY(-0.125em);
 }

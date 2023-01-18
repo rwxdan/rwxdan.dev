@@ -51,11 +51,11 @@
   transition: all var(--ease-out-quad) var(--ms200);
 }
 
-.nav-links:not(.resume):is(:focus, :active, :hover) {
+.nav-links:not(.resume):is(:hover, :active, :focus) {
   color: var(--neutral-700);
 }
 
-.nav-links:not(.resume):is(:focus, :active, :hover)::after {
+.nav-links:not(.resume):is(:hover, :active, :focus)::after {
   transform: scale(1);
 }
 
@@ -67,7 +67,7 @@
   transition: all var(--ease-out-sine) var(--ms200);
 }
 
-.nav-links.resume:is(:focus, :active, :hover) {
+.nav-links.resume:is(:hover, :active, :focus) {
   background-color: var(--primary-570);
   box-shadow: var(--box-shadow-btn);
 }

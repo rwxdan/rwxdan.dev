@@ -19,7 +19,7 @@
   transition: all var(--ease-out-sine) var(--ms200);
 }
 
-.anchor-mail .mail:is(:hover, :focus-visible) {
+.anchor-mail .mail:is(:hover, :active, :focus) {
   color: var(--primary-600);
 }
 

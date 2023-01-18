@@ -29,7 +29,7 @@
   background-color: var(--primary-500);
 }
 
-.anchor-links .links-box .link:is(:focus, :active, :hover) {
+.anchor-links .links-box .link:is(:hover, :active, :focus) {
   color: var(--primary-600);
   transform: translateY(-0.125em);
 }

@@ -168,13 +168,13 @@
   clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 
-.hero .wrapper:is(:focus, :active, :hover) .tag-box {
+.hero .wrapper:is(:hover, :active, :focus) .tag-box {
   visibility: visible;
   opacity: 1;
   transform: translateY(-0.75rem);
 }
 
-.hero .wrapper:is(:focus, :active, :hover) .wave {
+.hero .wrapper:is(:hover, :active, :focus) .wave {
   animation: wave var(--s2) infinite;
   transform-origin: 70% 70%;
   display: inline-block;

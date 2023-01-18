@@ -97,7 +97,7 @@
   color: var(--primary-570);
 }
 
-.text-box .external-links .link:is(:focus, :active, :hover) {
+.text-box .external-links .link:is(:hover, :active, :focus) {
   transform: translateY(-0.125em);
   color: var(--primary-600);
 }
