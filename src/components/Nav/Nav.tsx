@@ -44,7 +44,7 @@ const Nav = () => {
           </a>
         </div>
         <div>
-          <img src={Open ? Close : Menu} alt="Menu" className="nav-menu" onClick={() => setOpen((prev) => !prev)} />
+          <img src={!Open ? Menu : Close} alt="Menu" className="nav-menu" onClick={() => setOpen((prev) => !prev)} />
           <div>
             <ul className={`nav-links-box ${Open && 'expanded'} ${scrollPosition && 'fix'}`}>
               {navLinks.map((item, index) => (
