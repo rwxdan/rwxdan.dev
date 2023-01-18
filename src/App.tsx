@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
+import React, { Suspense } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import {
-  LoadingEffect,
   Nav,
   AnchorLinks,
   AnchorMail,
@@ -12,13 +11,9 @@ import {
   Footer,
   AnalyticsComponent,
 } from '@/components';
+
+const LoadingEffect = React.lazy(() => import('@/components/LoadingEffect/LoadingEffect'));
 const App = () => {
-  const [Loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
-  }, []);
-
   return (
     <HelmetProvider>
       <Helmet>
@@ -31,9 +26,7 @@ const App = () => {
           rel="stylesheet"
         />
       </Helmet>
-      {Loading ? (
-        <LoadingEffect />
-      ) : (
+      <Suspense fallback={<LoadingEffect />}>
         <div>
           <Nav />
           <main>
@@ -47,7 +40,7 @@ const App = () => {
           <Footer />
           <AnalyticsComponent />
         </div>
-      )}
+      </Suspense>
     </HelmetProvider>
   );
 };

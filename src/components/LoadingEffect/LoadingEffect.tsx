@@ -1,3 +1,4 @@
+import { FunctionComponent } from 'react';
 import './loading_effect.css';
 const LoadingEffect = () => {
   return (
@@ -13,35 +14,15 @@ const LoadingEffect = () => {
               width="128"
             >
               <g transform="matrix(1,0,0,1,0.15422077209916552,-0.24049999999999727)">
-                <svg
-                  viewBox="0 0 82.69155845580168 95.481"
-                  height="95.481"
-                  width="82.69155845580168"
-                >
+                <svg viewBox="0 0 82.69155845580168 95.481" height="95.481" width="82.69155845580168">
                   <g>
-                    <svg
-                      viewBox="0 0 82.69155845580168 95.481"
-                      height="95.481"
-                      width="82.69155845580168"
-                    >
+                    <svg viewBox="0 0 82.69155845580168 95.481" height="95.481" width="82.69155845580168">
                       <g>
-                        <svg
-                          viewBox="0 0 82.69155845580168 95.481"
-                          height="95.481"
-                          width="82.69155845580168"
-                        >
+                        <svg viewBox="0 0 82.69155845580168 95.481" height="95.481" width="82.69155845580168">
                           <g>
-                            <svg
-                              viewBox="0 0 82.69155845580168 95.481"
-                              height="95.481"
-                              width="82.69155845580168"
-                            >
+                            <svg viewBox="0 0 82.69155845580168 95.481" height="95.481" width="82.69155845580168">
                               <g>
-                                <svg
-                                  viewBox="0 0 82.69155845580168 95.481"
-                                  height="95.481"
-                                  width="82.69155845580168"
-                                >
+                                <svg viewBox="0 0 82.69155845580168 95.481" height="95.481" width="82.69155845580168">
                                   <g>
                                     <svg
                                       viewBox="0 0 82.69155845580168 95.481"
@@ -92,13 +73,7 @@ const LoadingEffect = () => {
                   </g>
                   <defs></defs>
                 </svg>
-                <rect
-                  width="82.69155845580168"
-                  height="95.481"
-                  fill="none"
-                  stroke="none"
-                  visibility="hidden"
-                ></rect>
+                <rect width="82.69155845580168" height="95.481" fill="none" stroke="none" visibility="hidden"></rect>
               </g>
             </svg>
           </g>
@@ -109,4 +84,4 @@ const LoadingEffect = () => {
   );
 };
 
-export default LoadingEffect;
+export default LoadingEffect as FunctionComponent;
