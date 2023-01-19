@@ -29,7 +29,7 @@ const Projects = () => {
     <section ref={ref} id="projects">
       <animated.div style={springs} className="projects">
         <h3 className="title">Featured projects</h3>
-        <h4 className="sub-title">Take a look at some of my builds</h4>
+        <h4 className="sub-title">Some of the things I've built</h4>
         <div className="projects-box">
           {featured.slice(0, 4).map((project) => (
             <Sample
