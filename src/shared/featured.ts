@@ -1,4 +1,4 @@
-import { Blogr, Hoobank, Manage, TipCalculator } from '@static/images';
+import { Hoobank, Manage, TipCalculator, EvoGym } from '@static/images';
 
 const featured: {
   id: string;
@@ -10,18 +10,18 @@ const featured: {
   image?: string;
 }[] = [
   {
-    id: 'blogr',
-    name: 'Blogr Landing Page',
-    info: 'Concept landing page for Blogr, a fictional platform. This landing page in particular has something special to it, a nav-bar with triple dropdown menus and a multi-level footer. I had some fun with React hooks and the DRY principle while coding it!',
-    stack: ['PostCSS', 'ReactJS', 'TailwindCSS', 'Vite'],
-    code: 'https://github.com/rwxdan/blogr-landing-page',
-    live: 'https://rwxdan-blogr-lp.netlify.app/',
-    image: Blogr,
+    id: 'evogym',
+    name: 'Evolutionary Fitness',
+    info: "A prototype landing page for a prototype bussiness called EvoGym. It's fully responsive, dynamic and very lightweight.",
+    stack: ['PostCSS', 'ReactJS', 'TailwindCSS', 'TypeScript', 'Vite'],
+    code: 'https://github.com/rwxdan/evo-fit-landing-page',
+    live: 'https://evo-fit-landing-page.vercel.app/',
+    image: EvoGym,
   },
   {
     id: 'hoobank',
     name: 'Hoobank',
-    info: "HooBank is a landing page whose gorgeous design was created by @adrianhajdin and completed by their community over at Figma. This build gave me a much-needed understanding of gradients and blur, and it's also one of my first projects using TailwindCSS.",
+    info: "Prototype landing page for HooBank, a GPT-3 futuristic platform. It's Mobile-friendly with beautiful colors and a very well-constructed layout.",
     stack: ['PostCSS', 'ReactJS', 'TailwindCSS', 'Vite'],
     code: 'https://github.com/rwxdan/hoobank',
     live: 'https://hoobank-rwxdan.vercel.app/',
@@ -30,7 +30,7 @@ const featured: {
   {
     id: 'manage',
     name: 'Manage Landing Page',
-    info: "Manage is one of the most fun builds I've coded so far. This app has a relatively complex layout and its responsiveness was a real challenge to deal with. The assets were provided by FEM.",
+    info: "Manage's prototype landing page. Completly responsive as well, it has a carefully-designed layout with some catchy details to stand out.",
     stack: ['PostCSS', 'ReactJS', 'Framer Motion', 'Vite'],
     code: 'https://github.com/rwxdan/manage-landing-page',
     live: 'https://manage-landing-page-rwxdan.vercel.app/',
@@ -39,7 +39,7 @@ const featured: {
   {
     id: 'tip',
     name: 'Tip Calculator App',
-    info: "Supose that you're on a restaurant with some friends and you want to calculate the amount of money by tip percentage that each one has to pay, plus the bill amount. Tip Calculator lets you easily do that!",
+    info: "A very handy app for whenever you need to get your tips right. Whether you're in company or alone, the app is going to calculate the right amounts for you.",
     stack: ['HTML', 'JavaScript', 'SCSS'],
     code: 'https://github.com/rwxdan/tip-calculator-app',
     live: 'https://rwxdan.github.io/tip-calculator-app',
@@ -67,6 +67,14 @@ const featured: {
     stack: ['HTML', 'SCSS'],
     code: 'https://github.com/rwxdan/huddle-landing-page-extended',
     live: 'https://rwxdan.github.io/huddle-landing-page-extended/',
+  },
+  {
+    id: 'blogr',
+    name: 'Blogr Landing Page',
+    info: "Concept landing page for Blogr, a prototype platform. It's fully responsive, dynamic, well-designed and very 'flexy'. 📜  ",
+    stack: ['ReactJS', 'TailwindCSS', 'Vite'],
+    code: 'https://github.com/rwxdan/blogr-landing-page',
+    live: 'https://rwxdan-blogr-lp.netlify.app/',
   },
   {
     id: 'dragonRepeller',
