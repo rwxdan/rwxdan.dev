@@ -103,7 +103,7 @@
 }
 
 .sample-box .image-box {
-  flex: 1;
+  flex-basis: 60%;
 }
 
 .sample-box .image-box .sample {
