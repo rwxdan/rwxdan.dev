@@ -39,7 +39,7 @@ const featured: {
   {
     id: 'tip',
     name: 'Tip Calculator App',
-    info: "A very handy app for whenever you need to get your tips right. Whether you're in company or alone, the app is going to calculate the right amounts for you.",
+    info: "A very handy app for whenever you need to get your tips right. Whether in company or alone, the app is going to get you the right amounts.",
     stack: ['HTML', 'JavaScript', 'SCSS'],
     code: 'https://github.com/rwxdan/tip-calculator-app',
     live: 'https://rwxdan.github.io/tip-calculator-app',
