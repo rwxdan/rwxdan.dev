@@ -104,6 +104,15 @@
     height: 2rem;
   }
 
+  .nav-logo-icon {
+    max-height: 2rem;
+    display: inline-block;
+  }
+
+  .nav-logo-text {
+    font-size: var(--fs-base);
+  }
+
   .nav-links-box {
     display: none;
     gap: 2rem;
