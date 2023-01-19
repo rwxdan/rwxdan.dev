@@ -1,4 +1,4 @@
-import { useInView, animated } from '@react-spring/web';
+import { useSpring, useInView, animated } from '@react-spring/web';
 import { SiGithub } from 'react-icons/si';
 import { FiShare } from 'react-icons/fi';
 interface Props {
@@ -12,8 +12,7 @@ interface Props {
 
 const Sample = (props: Props) => {
   const isMobile = window.innerWidth < 475;
-  let ref;
-  let springs;
+  let ref, springs;
   !isMobile &&
     ([ref, springs] = useInView(
       () => ({
