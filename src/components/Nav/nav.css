@@ -17,8 +17,24 @@
   box-shadow: 0 0 0.75em var(--neutral-450);
 }
 
-.nav-logo {
-  height: 1.75rem;
+.nav-logo-box {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-600);
+}
+
+.nav-logo-icon {
+  height: 2.25rem;
+  display: inline-block;
+}
+
+.nav-logo-text {
+  font-size: var(--fs-xl);
+  font-family: var(--ff-sans-title);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-left: -2px;
 }
 
 .nav-links-box {
@@ -81,9 +97,6 @@
     padding: 1.5rem;
     position: fixed;
     overflow: visible;
-  }
-  .nav-logo {
-    height: 1.5rem;
   }
 
   .nav-menu {
