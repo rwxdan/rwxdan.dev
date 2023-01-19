@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { animated, useSpring } from '@react-spring/web';
-import logo from '@static/logo.svg';
-import { Menu, Close } from '@static/icons';
+import { Menu, Close, Logo } from '@static/icons';
 import { navLinks } from '@/shared';
 import './nav.css';
 const Nav = () => {
@@ -39,8 +38,9 @@ const Nav = () => {
     <nav>
       <animated.div style={a_nav} id="nav" className={`nav ${scrollPosition && 'blur-bg'}`}>
         <div className="nav-logo-box">
-          <a href={`${window.location.origin}`} onClick={() => window.location.reload}>
-            <img src={logo} alt="rwxdan" className="nav-logo" />
+          <a href={`${window.location.origin}`} onClick={() => window.location.reload} className="nav-logo-box">
+            <img src={Logo} alt="rwxdan" className="nav-logo-icon" />
+            <p className="nav-logo-text">|rwxdan</p>
           </a>
         </div>
         <div>
