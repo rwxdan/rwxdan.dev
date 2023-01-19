@@ -17,9 +17,9 @@
 
   --ff-sans-title: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
     'Helvetica Neue', sans-serif;
-  --ff-sans-body: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+  --ff-sans-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
     'Helvetica Neue', sans-serif;
-  --ff-mono: 'Roboto Mono', monospace;
+  --ff-mono: 'Spline Sans Mono', monospace;
 
   --fs-xs: 0.875rem;
   --fs-sm: 0.9375rem;

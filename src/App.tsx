@@ -27,7 +27,7 @@ const App = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" cross-origin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;700&family=Inter:wght@400;500;700&family=Work+Sans:wght@600;700;800;900&display=swap"
           rel="stylesheet"
         />
       </Helmet>
