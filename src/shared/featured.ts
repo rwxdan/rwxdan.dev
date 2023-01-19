@@ -1,6 +1,6 @@
 import { Hoobank, Manage, TipCalculator, EvoGym } from '@static/images';
 
-const featured: {
+export const featured: {
   id: string;
   name: string;
   info?: string;
@@ -13,7 +13,7 @@ const featured: {
     id: 'evogym',
     name: 'Evolutionary Fitness',
     info: "A prototype landing page for a prototype bussiness called EvoGym. It's fully responsive, dynamic and very lightweight.",
-    stack: ['PostCSS', 'ReactJS', 'TailwindCSS', 'TypeScript', 'Vite'],
+    stack: ['ReactJS', 'TailwindCSS', 'TypeScript', 'Vite'],
     code: 'https://github.com/rwxdan/evo-fit-landing-page',
     live: 'https://evo-fit-landing-page.vercel.app/',
     image: EvoGym,
@@ -101,5 +101,3 @@ const featured: {
     live: 'https://news-homepage-nu-ashy.vercel.app/',
   },
 ];
-
-export { featured };
