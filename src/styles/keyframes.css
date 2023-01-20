@@ -49,12 +49,12 @@
   }
 }
 
-@keyframes roll-up {
+@keyframes disappear {
   from {
-    transform: translateY(0);
+    opacity: 1;
   }
   to {
-    transform: translateY(-100vh);
+    opacity: 0;
   }
 }
 

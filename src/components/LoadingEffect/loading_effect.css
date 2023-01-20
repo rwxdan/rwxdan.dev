@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
-  animation: roll-up var(--ease-in-out-cubic) var(--ms500) both;
+  animation: disappear var(--ease-in-out-sine) var(--ms500) both;
   animation-delay: calc(var(--s2) + var(--ms500));
   box-shadow: 0 1rem 3.25rem var(--neutral-450);
 }
