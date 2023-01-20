@@ -1,6 +1,3 @@
 module.exports = {
-  plugins: {
-    'postcss-import': {},
-    autoprefixer: {},
-  },
+  plugins: [require('postcss-import'), require('autoprefixer'), require('cssnano')],
 };
