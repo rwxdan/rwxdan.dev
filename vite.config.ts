@@ -4,11 +4,6 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  css: {
-    postcss: {
-      plugins: [require('postcss-import'), require('autoprefixer'), require('cssnano')],
-    },
-  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
