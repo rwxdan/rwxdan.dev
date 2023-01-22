@@ -47,7 +47,7 @@
   color: var(--neutral-700);
   line-height: 2rem;
   margin-block: 0.75rem;
-  max-width: 75ch;
+  max-width: 72ch;
 }
 
 .whoami .text .bold {
