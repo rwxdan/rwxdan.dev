@@ -1,4 +1,4 @@
-import { useSpring, useInView, animated } from '@react-spring/web';
+import { useInView, animated } from '@react-spring/web';
 import { SiGithub } from 'react-icons/si';
 import { FiShare } from 'react-icons/fi';
 interface Props {
