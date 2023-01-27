@@ -52,6 +52,7 @@
 .show-more .more {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  word-wrap: break-word;
   gap: 2.125rem;
 }
 
