@@ -114,22 +114,23 @@
   }
 
   .nav-links-box {
-    flex-direction: column;
-    gap: 2.25rem;
+    display: none;
     position: absolute;
     inset: 5em 0 auto 0;
     padding-block: 2em;
     background-color: var(--neutral-400);
     box-shadow: 0 100vh 0 100vh var(--neutral-670);
     transition: box-shadow var(--ease-out-sine) var(--ms200);
-    animation: menu-close var(--ease-out-sine) var(--ms300) forwards;
   }
-  
+
   .nav-links {
     font-size: var(--fs-base);
   }
-  
+
   .nav-links-box.expanded {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
     animation: menu-open var(--ease-out-sine) var(--ms300) forwards;
     z-index: 50;
   }
