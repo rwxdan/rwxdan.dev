@@ -121,6 +121,9 @@
     background-color: var(--neutral-400);
     box-shadow: 0 100vh 0 100vh var(--neutral-670);
     transition: box-shadow var(--ease-out-sine) var(--ms200);
+    transform: translateY(-20%);
+    opacity: 0;
+    z-index: 0;
   }
 
   .nav-links {
