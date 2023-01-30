@@ -1,6 +1,6 @@
 @keyframes menu-open {
   from {
-    transform: translateY(-200%);
+    transform: translateY(-20%);
     opacity: 0;
     z-index: 0;
   }
@@ -8,19 +8,6 @@
     transform: translateY(0);
     opacity: 1;
     z-index: 50;
-  }
-}
-
-@keyframes menu-close {
-  from {
-    transform: translateY(0);
-    opacity: 1;
-    z-index: 50;
-  }
-  to {
-    transform: translateY(-200%);
-    opacity: 0;
-    z-index: 0;
   }
 }
 
