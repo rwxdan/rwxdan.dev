@@ -1,4 +1,4 @@
-import { Hoobank, Manage, TipCalculator, EvoGym } from '@static/images';
+import { Manage, TipCalculator, EvoGym, darFi } from '@static/images';
 
 export const featured: {
   id: string;
@@ -10,6 +10,15 @@ export const featured: {
   image?: string;
 }[] = [
   {
+    id: 'darfi',
+    name: 'Dar-fi Blog',
+    info: "Personal web page and blog site for Darwin Castro. Built with Astro, it's fast, responsive, a11y friendly and even supports dark mode.",
+    stack: ['Astro', 'TailwindCSS', 'TypeScript', 'PostCSS'],
+    code: 'https://github.com/darwincastro/dar-fi.com',
+    live: 'https://dar-fi.com/',
+    image: darFi,
+  },
+  {
     id: 'evogym',
     name: 'Evolutionary Fitness',
     info: "A prototype landing page for a prototype bussiness called EvoGym. It's fully responsive, dynamic and very lightweight.",
@@ -17,15 +26,6 @@ export const featured: {
     code: 'https://github.com/rwxdan/evo-fit-landing-page',
     live: 'https://evo-fit-landing-page.vercel.app/',
     image: EvoGym,
-  },
-  {
-    id: 'hoobank',
-    name: 'Hoobank',
-    info: "Prototype landing page for HooBank, a GPT-3 futuristic platform. It's Mobile-friendly with beautiful colors and a very well-constructed layout.",
-    stack: ['PostCSS', 'ReactJS', 'TailwindCSS', 'Vite'],
-    code: 'https://github.com/rwxdan/hoobank',
-    live: 'https://hoobank-rwxdan.vercel.app/',
-    image: Hoobank,
   },
   {
     id: 'manage',
@@ -39,7 +39,7 @@ export const featured: {
   {
     id: 'tip',
     name: 'Tip Calculator App',
-    info: "A very handy app for whenever you need to get your tips right. Whether in company or alone, the app is going to get you the right amounts.",
+    info: 'A very handy app for whenever you need to get your tips right. Whether in company or alone, the app is going to get you the right amounts.',
     stack: ['HTML', 'JavaScript', 'SCSS'],
     code: 'https://github.com/rwxdan/tip-calculator-app',
     live: 'https://rwxdan.github.io/tip-calculator-app',
@@ -59,6 +59,14 @@ export const featured: {
     info: 'GUI YT Downloader written in Python, this app lets you download videos (or their audio only) from youtube quickly and easy. Use with caution 🐍',
     stack: ['Python'],
     code: 'https://github.com/rwxdan/yt-pydownloader',
+  },
+  {
+    id: 'hoobank',
+    name: 'Hoobank',
+    info: 'Prototype landing page for HooBank, a GPT-3 futuristic platform. Mobile-friendly, has beautiful colors and a very well-constructed layout 🦾',
+    stack: ['PostCSS', 'ReactJS', 'TailwindCSS'],
+    code: 'https://github.com/rwxdan/hoobank',
+    live: 'https://hoobank-rwxdan.vercel.app/',
   },
   {
     id: 'huddleExtended',
