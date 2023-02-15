@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/rwxdan/rwxdan.dev/blob/main/public/favicon.png" width="100" />
+  <a href="https://rwxdan.dev/"><img alt="Logo" src="https://github.com/rwxdan/rwxdan.dev/blob/main/public/favicon.png" width="100" /></a>
 </div>
 <h1 align="center">
   rwxdan.dev
@@ -9,6 +9,7 @@
 </p>
 <div align="center">
     <img height="44" src="https://skillicons.dev/icons?i=vercel,vite,nodejs,react,typescript,css,vscode" />
+    <img src="./public/screenshot.jpg">
 </div>
 
 ## Tools used 🧰
@@ -30,14 +31,19 @@
 ## Local development 🛠
 
 1. Clone the project, then `cd` into it
+
 ```
 git clone https://github.com/rwxdan/rwxdan.dev && cd rwxdan.dev
 ```
+
 2. Install all the dependencies
+
 ```
 yarn
 ```
+
 3. Start the development server
+
 ```
 yarn dev
 ```
