@@ -7,7 +7,6 @@ export { default as WhoAmI } from './WhoAmI/WhoAmI';
 export { default as Footer } from './Footer/Footer';
 export { default as AnchorLinks } from './AnchorLinks/AnchorLinks';
 export { default as AnchorMail } from './AnchorMail/AnchorMail';
-export { default as AnalyticsComponent } from './Analytics/AnalyticsComponent';
 export { default as Knowledge } from './Knowledge/Knowledge';
 export { default as Button } from './common/Button/Button';
 export { default as Sample } from './Sample/Sample';

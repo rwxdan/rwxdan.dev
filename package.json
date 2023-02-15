@@ -11,7 +11,6 @@
   "dependencies": {
     "@frank-mayer/react-tag-cloud": "^1.1.1",
     "@react-spring/web": "^9.6.1",
-    "@vercel/analytics": "^0.1.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",

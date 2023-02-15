@@ -1,17 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import {
-  LoadingEffect,
-  Nav,
-  AnchorLinks,
-  AnchorMail,
-  Hero,
-  WhoAmI,
-  Projects,
-  Connect,
-  Footer,
-  AnalyticsComponent,
-} from '@/components';
+import { LoadingEffect, Nav, AnchorLinks, AnchorMail, Hero, WhoAmI, Projects, Connect, Footer } from '@/components';
 const App = () => {
   const [Loading, setLoading] = useState(true);
 
@@ -45,7 +34,6 @@ const App = () => {
             <AnchorMail />
           </main>
           <Footer />
-          <AnalyticsComponent />
         </div>
       )}
     </HelmetProvider>
