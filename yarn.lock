@@ -568,7 +568,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-spring/types@npm:^9.6.1, @react-spring/types@npm:~9.6.1":
+"@react-spring/types@npm:^9.7.0":
+  version: 9.7.0
+  resolution: "@react-spring/types@npm:9.7.0"
+  checksum: 0137cf6066d9e3be2a0499eee3dbb5e979b1b392e74f38eec10933702800d5f401c84c23cb13d4575453d1b8b4ad9c849090ee3d959fe0a0a5108f423bfc0fc3
+  languageName: node
+  linkType: hard
+
+"@react-spring/types@npm:~9.6.1":
   version: 9.6.1
   resolution: "@react-spring/types@npm:9.6.1"
   checksum: 803dc6c2d67773ee1e5d00d2feac291dad32cf4ca6a790554d6133dd4cd39aeb89b3beea4cc67f91c2d2e4bdbd1a995540dc7fee117138e207a105d255d39c1c
@@ -2496,7 +2503,7 @@ __metadata:
   resolution: "rwxdan.dev@workspace:."
   dependencies:
     "@frank-mayer/react-tag-cloud": ^1.1.1
-    "@react-spring/types": ^9.6.1
+    "@react-spring/types": ^9.7.0
     "@react-spring/web": ^9.6.1
     "@types/helmet": ^4.0.0
     "@types/node": ^18.14.0
