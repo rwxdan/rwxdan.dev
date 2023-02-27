@@ -18,7 +18,7 @@
     "react-icons": "^4.7.1"
   },
   "devDependencies": {
-    "@react-spring/types": "^9.6.1",
+    "@react-spring/types": "^9.7.1",
     "@types/helmet": "^4.0.0",
     "@types/node": "^18.14.2",
     "@types/react": "^18.0.28",
