@@ -8,6 +8,10 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "imports": {
+    "@": "./src",
+    "@static": "./static"
+  },
   "dependencies": {
     "@frank-mayer/react-tag-cloud": "^1.1.1",
     "@react-spring/web": "^9.7.1",
