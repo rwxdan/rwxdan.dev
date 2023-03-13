@@ -1,16 +1,42 @@
 {
   "short_name": "Daniel Castro",
-  "name": "Daniel Castro's portfolio",
+  "name": "Daniel Castro",
   "description": "Daniel Castro is a Frontend Web developer devoted to create Web Applications that are both functional and aesthetically pleasing",
   "background_color": "#f5f4f0",
   "theme_color": "#ba2649",
+  "start_url": "/",
+  "scope": ".",
+  "display": "standalone",
   "icons": [
     {
-      "src": "favicon.png",
-      "sizes": "24x24",
-      "type": "image/png"
+      "src": "512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "180x180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "44x44.png",
+      "sizes": "44x44",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
-  "start_url": ".",
-  "display": "standalone"
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=rwxdan.dev"
+    }
+  ]
 }
