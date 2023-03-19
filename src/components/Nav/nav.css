@@ -9,10 +9,10 @@
   z-index: 100;
   background-color: var(--neutral-380);
   transition: all var(--ease-out-sine) var(--ms200);
+  backdrop-filter: blur(15px);
 }
 
-.nav.blur-bg {
-  backdrop-filter: blur(15px);
+.nav.nav-fixed {
   padding-block: 0.5em;
   box-shadow: 0 0 0.75em var(--neutral-450);
 }
