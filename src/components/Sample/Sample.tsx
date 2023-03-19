@@ -30,7 +30,7 @@ const Sample = (props: Props) => {
       }),
       {
         once: true,
-        rootMargin: '0px 0px -20% 0px',
+        rootMargin: '0px 0px -25% 0px',
       },
     ));
   return (
