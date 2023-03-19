@@ -36,7 +36,7 @@ const Nav = () => {
   const [Open, setOpen] = useState(false);
   return (
     <nav>
-      <animated.div style={a_nav} id="nav" className={`nav ${scrollPosition && 'blur-bg'}`}>
+      <animated.div style={a_nav} id="nav" className={`nav ${scrollPosition && 'nav-fixed'}`}>
         <div className="nav-logo-box">
           <a href={`${window.location.origin}`} onClick={() => window.location.reload} className="nav-logo-box">
             <img src={Logo} alt="rwxdan" className="nav-logo-icon" />
