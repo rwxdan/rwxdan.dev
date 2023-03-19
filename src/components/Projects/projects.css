@@ -34,6 +34,14 @@
   color: var(--neutral-750);
 }
 
+.projects .text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
 .projects-box {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -66,6 +74,7 @@
   color: var(--neutral-700);
   max-width: 52ch;
   line-height: 1.75rem;
+  text-align: left;
 }
 
 .sample-box .stack {
