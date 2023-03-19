@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://rwxdan.dev/"><img alt="Logo" src="https://github.com/rwxdan/rwxdan.dev/blob/main/public/48x48.png" width="48" /></a>
+  <a href="https://rwxdan.dev/"><img alt="Logo" src="https://github.com/rwxdan/rwxdan.dev/blob/main/public/512x512.svg" width="96" /></a>
 </div>
 <h1 align="center">
   rwxdan.dev
@@ -13,13 +13,11 @@
 
 ![](./public/screenshot.jpg)
 
-
 ## Tools used 🧰
 
 - [Vite](https://vitejs.dev/)
 - [React](https://reactjs.org/)
 - [TypeScript](https://typescriptlang.org/)
-
 
 ## Local development 🛠
 
@@ -43,7 +41,9 @@ yarn dev
 
 ## Do you want to contribute? 🤝
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md)
+- If you see something wrong or you want to share an idea, please [open an issue](https://github.com/rwxdan/rwxdan.dev/issues)
+- Fork the project and submit a Pull Request
+- Give it a star! ⭐
 
 ---
 
