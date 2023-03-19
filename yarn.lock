@@ -1568,17 +1568,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@frank-mayer/react-tag-cloud@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "@frank-mayer/react-tag-cloud@npm:1.1.1"
-  dependencies:
-    TagCloud: ^2.3.0
-  peerDependencies:
-    react: ^18.2.0
-  checksum: e781c48c3d048c95fe525dfdb81761e86b070ce4b97d5385ba5d194a985efd9581021661a50a0aa52b4626f1e34ceadde04c218ef073089cd2ac5c7d37bf228b
-  languageName: node
-  linkType: hard
-
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -1891,15 +1880,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/helmet@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "@types/helmet@npm:4.0.0"
-  dependencies:
-    helmet: "*"
-  checksum: ded60d8d9960edbae4d10603511dca9b9c50a9937f49e0d2b14bc096302e85a038acd443889a132dab60bc950bfd0e47337bdca485d75bbb7b6224f74fc50ab7
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:*":
   version: 18.15.1
   resolution: "@types/node@npm:18.15.1"
@@ -1987,13 +1967,6 @@ __metadata:
   peerDependencies:
     vite: ^4.1.0-beta.0
   checksum: 450fac79e67cba9e1581c860f78e687b44108ab4117663ef20db279316e03cd8e87f94fef376e27cc5e200bd52813dcc09b70ea570c7c7cc291fcd47eb260fbc
-  languageName: node
-  linkType: hard
-
-"TagCloud@npm:^2.3.0":
-  version: 2.3.2
-  resolution: "TagCloud@npm:2.3.2"
-  checksum: 5bf85d20e7052dad944cc42b4c7fde98a8438b2187e8c90de6a2c9494fb9a6691786a459668d1cebfc135f75d6fd449f78629c05d2b1ad3b91eb07fc1c441e0b
   languageName: node
   linkType: hard
 
@@ -3241,13 +3214,6 @@ __metadata:
   dependencies:
     function-bind: ^1.1.1
   checksum: b9ad53d53be4af90ce5d1c38331e712522417d017d5ef1ebd0507e07c2fbad8686fffb8e12ddecd4c39ca9b9b47431afbb975b8abf7f3c3b82c98e9aad052792
-  languageName: node
-  linkType: hard
-
-"helmet@npm:*":
-  version: 6.0.1
-  resolution: "helmet@npm:6.0.1"
-  checksum: 1ca20d0b7888b6208130bbb50d183e68d53bb5fa0caead2106226d6d53216dfc893b4b5c07528304e342884f75d87702003b80884b065cb5dcbc705fb4a6ad52
   languageName: node
   linkType: hard
 
@@ -4760,10 +4726,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rwxdan.dev@workspace:."
   dependencies:
-    "@frank-mayer/react-tag-cloud": ^1.1.1
     "@react-spring/types": ^9.7.1
     "@react-spring/web": ^9.7.1
-    "@types/helmet": ^4.0.0
     "@types/node": ^18.15.0
     "@types/react": ^18.0.28
     "@types/react-dom": ^18.0.11
