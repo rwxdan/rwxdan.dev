@@ -1,5 +1,4 @@
 import { useInView, animated } from '@react-spring/web';
-import { Knowledge } from '@/components';
 import './whoami.css';
 const WhoAmI = () => {
   const isMobile = window.innerWidth < 475;
@@ -22,12 +21,12 @@ const WhoAmI = () => {
       }),
       {
         once: true,
-        rootMargin: '0px 0px -30% 0px',
+        rootMargin: '0px 0px -25% 0px',
       },
     ));
   return (
     <section id="about" className="whoami">
-      <animated.div ref={ref} style={springs} className="whoami-box">
+      <animated.div ref={ref} style={springs}>
         <div className="text-box">
           <h3 className="title">About</h3>
           <p className="text">
@@ -52,7 +51,6 @@ const WhoAmI = () => {
             <span className="bold">SCSS</span>, and many other frameworks and libraries that I work with every day.{' '}
           </p>
         </div>
-        <Knowledge />
       </animated.div>
     </section>
   );
