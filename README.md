@@ -42,7 +42,7 @@ yarn dev
 ## Do you want to contribute? 🤝
 
 - If you see something wrong or you want to share an idea, please [open an issue](https://github.com/rwxdan/rwxdan.dev/issues)
-- Fork the project and submit a Pull Request
+- Fork the project and submit a [pull request](https://github.com/rwxdan/rwxdan.dev/pulls)
 - Give it a star! ⭐
 
 ---
