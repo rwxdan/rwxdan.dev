@@ -175,7 +175,7 @@
   .sample-box .image-box .sample,
   .sample-box:nth-child(even) .image-box .sample {
     max-width: 100%;
-    filter: none;
+    filter: drop-shadow(0.5em 0.5em 0.25em var(--primary-450));
     opacity: 1;
   }
   .sample-box .image-box .sample:hover {
