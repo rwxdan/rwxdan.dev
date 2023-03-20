@@ -71,4 +71,8 @@
   .whoami .title {
     font-size: var(--fs-xl);
   }
+
+  .whoami .text-box {
+    text-align: left;
+  }
 }
