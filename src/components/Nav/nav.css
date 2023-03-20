@@ -14,7 +14,7 @@
 
 .nav.nav-fixed {
   padding-block: 0.5em;
-  box-shadow: 0 0 0.75em var(--neutral-450);
+  box-shadow: 0 0 0.5em var(--primary-450);
 }
 
 .nav-logo-box {
@@ -115,14 +115,13 @@
 
   .nav-links-box {
     display: none;
-    position: absolute;
+    position: fixed;
     inset: 5em 0 auto 0;
     padding-block: 2em;
     background-color: var(--neutral-400);
     box-shadow: 0 100vh 0 100vh var(--neutral-670);
     transition: box-shadow var(--ease-out-sine) var(--ms200);
     transform: translateY(-20%);
-    opacity: 0;
     z-index: 0;
   }
 
@@ -135,14 +134,14 @@
     flex-direction: column;
     gap: 2.25rem;
     animation: menu-open var(--ease-out-sine) var(--ms300) forwards;
-    z-index: 50;
+    z-index: 100;
   }
 
   .nav-links-box.expanded.fix {
     top: 3.5em;
   }
 
-  .nav.blur-bg {
+  .nav.nav-fixed {
     padding-block: 0.75em;
   }
 }
