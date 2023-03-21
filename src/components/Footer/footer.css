@@ -9,7 +9,7 @@
 
 .footer .text-box .text {
   font-family: var(--ff-sans-body);
-  font-size: var(--fs-xs);
+  font-size: calc(var(--fs-xs) - 0.125em);
   font-weight: 500;
   color: var(--neutral-800);
   text-align: center;
