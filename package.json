@@ -30,7 +30,7 @@
     "postcss-import": "^15.1.0",
     "typescript": "^4.9.5",
     "vite": "^4.2.1",
-    "vite-plugin-pwa": "^0.14.4"
+    "vite-plugin-pwa": "^0.14.7"
   },
   "packageManager": "yarn@3.4.1"
 }
