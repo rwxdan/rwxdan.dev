@@ -1729,7 +1729,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-spring/types@npm:^9.7.1, @react-spring/types@npm:~9.7.1":
+"@react-spring/types@npm:^9.7.2":
+  version: 9.7.2
+  resolution: "@react-spring/types@npm:9.7.2"
+  checksum: 145a79d2f40dfc9f0a4b54db17890c6471b4e50563c01951ca13022977b0d8009865c1839cf07a762fd33ae0b83f2d6972e2d0fe50bd3105942b9cea5253612e
+  languageName: node
+  linkType: hard
+
+"@react-spring/types@npm:~9.7.1":
   version: 9.7.1
   resolution: "@react-spring/types@npm:9.7.1"
   checksum: 18b210d00fac6920651729ecafa5890e8e90cacb03d7c70d16ab9b067e4f301795bdf490f80574567f3012e278d8fc78ba3e4b11504215d9a949300a5b273413
@@ -4734,7 +4741,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "rwxdan.dev@workspace:."
   dependencies:
-    "@react-spring/types": ^9.7.1
+    "@react-spring/types": ^9.7.2
     "@react-spring/web": ^9.7.1
     "@types/node": ^18.15.0
     "@types/react": ^18.0.38
